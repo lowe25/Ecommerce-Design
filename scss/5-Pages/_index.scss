@@ -1,0 +1,28 @@
+.products-container{
+    height: 700px;
+    background-color: #ffffff;
+}
+.landing{
+    height: 300px;
+    background-image: url(/images/laptopLanding.jpg);
+    @include image-format;
+}
+h1{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: lighter;
+    border-bottom: 1px solid black;
+}
+.products-feature{
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 1px;
+
+    .product1,.product2,.product3{
+        @include product-box;
+    }
+}

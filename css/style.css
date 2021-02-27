@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: helvetica;
+}
+
+.btn-subs {
+  height: 33px;
+  width: 150px;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-search {
+  height: 28px;
+  width: 150px;
+  border: none;
+}
+
+.txt-email {
+  height: 31px;
+  width: 270px;
+  border-radius: 3px;
+  border: none;
+}
+
+.txt-search {
+  height: 28px;
+  width: 300px;
+  border: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+  background-color: #2C3E50;
+  color: #FDFEFF;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  list-style: none;
+  padding: 14px;
+}
+
+header .nav-links {
+  text-decoration: none;
+  text-decoration: none;
+  color: #FDFEFF;
+}
+
+header .fas {
+  padding-left: 10px;
+}
+
+.nav-burger {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.nav-burger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .nav-burger {
+    display: flex;
+  }
+  .nav-list {
+    display: none;
+    width: 100%;
+  }
+  .nav-list ul {
+    flex-direction: column;
+  }
+  .nav-list.active {
+    display: block;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+footer {
+  height: 250px;
+  background-color: #26292A;
+  color: #FDFEFF;
+  text-align: center;
+  display: grid;
+  align-content: center;
+  padding-top: 20px;
+}
+
+footer .subscription {
+  display: block;
+  padding: 10px;
+}
+
+footer .payment-partners {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+footer .payment-partners img {
+  height: 50px;
+}
+
+footer .payment-partners .american-exp {
+  padding: 5px;
+  height: 35px;
+}
+
+footer .customer, footer .payment {
+  color: #128799;
+}
+
+footer .customer-service {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+footer .customer-service .links {
+  text-decoration: none;
+  color: #FDFEFF;
+}
+
+footer .customer-service a:hover {
+  color: black;
+}
+
+.rights {
+  padding-top: 10px;
+  height: 20px;
+  font-size: 12px;
+  background-color: #090C0F;
+  color: #FDFEFF;
+  text-align: center;
+}
+
+.products-container {
+  height: 700px;
+  background-color: #ffffff;
+}
+
+.landing {
+  height: 300px;
+  background-image: url(/images/laptopLanding.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: lighter;
+  border-bottom: 1px solid black;
+}
+
+.products-feature {
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 1px;
+}
+
+.products-feature .product1, .products-feature .product2, .products-feature .product3 {
+  height: 230px;
+  width: 400px;
+  border: 2px solid black;
+}
+/*# sourceMappingURL=style.css.map */

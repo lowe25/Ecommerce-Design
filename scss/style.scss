@@ -1,0 +1,18 @@
+//Utilities
+@import '../scss/1-Utilities/variables';
+@import '../scss/1-Utilities/mixins';
+
+//Base
+@import '../scss/2-Base/reset';
+@import '../scss/2-Base/typography';
+//Components
+@import '../scss/3-Components/buttons';
+@import '../scss/3-Components/textboxes';
+@import '../scss/3-Components/box';
+
+//Layout
+@import '../scss/4-Layout/navbar';
+@import '../scss/4-Layout/footer';
+
+//Pages
+@import '../scss/5-Pages/index';

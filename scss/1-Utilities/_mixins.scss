@@ -1,0 +1,24 @@
+@mixin links-property{
+    text-decoration: none;
+    //Black #00050
+    color: $txt-color2;
+}
+
+@mixin links-property2 {
+    text-decoration: none;
+    //White #FDFEFF
+    color: $txt-color;
+}
+
+@mixin grid-property{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    padding: 15px;
+}
+
+@mixin image-format {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

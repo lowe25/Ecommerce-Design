@@ -1,0 +1,46 @@
+footer{
+    height: 250px;
+    background-color:#26292A;
+    color: $txt-color;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    padding-top: 20px;
+
+    .subscription{
+        display: block;
+        padding: 10px;
+    }
+
+    .payment-partners{
+        @include grid-property;
+        img{
+            height: 50px;
+        }
+        .american-exp{
+            padding: 5px;
+            height: 35px;
+        }
+    }
+    .customer,.payment{
+        color:#128799;
+    }
+    .customer-service{
+       @include grid-property;
+
+       .links{
+           @include links-property2;
+       }
+       a:hover{
+           color: black;
+       }
+    }
+}
+.rights{
+    padding-top: 10px;
+    height: 20px;
+    font-size: 12px;
+    background-color:#090C0F;
+    color: $txt-color;
+    text-align: center;
+}  
