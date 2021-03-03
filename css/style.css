@@ -290,4 +290,60 @@ h1 {
   padding: 10px;
   gap: 15px;
 }
+
+.monitor-container {
+  height: 700px;
+  background-color: black;
+  color: #FDFEFF;
+}
+
+.monitor-container .monitor-landing {
+  position: relative;
+  top: 14%;
+  text-align: center;
+}
+
+.monitor-container .monitor-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 150px;
+}
+
+.monitor-container .monitor-list .monitor-product {
+  height: 280px;
+  width: 400px;
+  border: 2px solid black;
+  border: 2px solid white;
+  height: 420px;
+}
+
+.monitor-container .monitor-list .monitor-product .img-container-monitor {
+  display: grid;
+  justify-content: center;
+}
+
+.monitor-container .monitor-list .monitor-product .img-container-monitor img {
+  position: relative;
+  height: 210px;
+  top: 1%;
+}
+
+.monitor-container .monitor-list .monitor-product .monitor-info {
+  display: grid;
+  justify-content: center;
+}
+
+.monitor-container .monitor-list .monitor-product .monitor-info li {
+  margin: 10px;
+}
+
+.monitor-container .monitor-list .monitor-product .btn-monitor-form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 15px;
+}
 /*# sourceMappingURL=style.css.map */

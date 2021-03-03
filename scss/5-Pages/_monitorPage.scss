@@ -1,0 +1,39 @@
+.monitor-container {
+  height: 700px;
+  background-color: black;
+  color: $txt-color;
+
+  .monitor-landing {
+    position: relative;
+    top:14%;
+    text-align: center;
+    p{
+     
+    }
+  }
+  .monitor-list {
+    @include grid-format-3;
+    gap: 25px;
+    padding: 150px;
+
+    .monitor-product{
+        @include product-box;
+        border: 2px solid white;
+        height: 420px;
+
+        .img-container-monitor{
+            @include img-container;
+        }
+     .monitor-info{
+        @include grid-property;
+        @include list-space;
+     }
+     .btn-monitor-form{
+        @include flex-property;
+        padding: 10px;
+        gap: 15px;
+     }
+    }
+
+  }
+}

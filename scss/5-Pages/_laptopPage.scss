@@ -7,6 +7,9 @@
     position: relative;
     top:14%;
     text-align: center;
+    p{
+     
+    }
   }
   .laptop-list {
     @include grid-format-3;
