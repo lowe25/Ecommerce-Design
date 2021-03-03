@@ -5,6 +5,7 @@ header {
   padding: 5px;
   background-color: $nav-bg;
   color: $txt-color;
+  border-bottom: 2px solid black;
 
   ul {
     display: flex;
@@ -17,6 +18,10 @@ header {
     text-decoration: none;
     @include links-property2;
   }
+  a:hover{
+    color: $primary-color;
+  }
+
   .fas{
     padding-left: 10px;
   }

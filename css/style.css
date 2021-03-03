@@ -20,6 +20,11 @@ body {
   border: none;
 }
 
+.btn-Addcart {
+  height: 30px;
+  width: 130px;
+}
+
 .txt-email {
   height: 31px;
   width: 270px;
@@ -38,8 +43,9 @@ header {
   justify-content: space-evenly;
   align-items: center;
   padding: 5px;
-  background-color: #2C3E50;
+  background-color: #181818;
   color: #FDFEFF;
+  border-bottom: 2px solid black;
 }
 
 header ul {
@@ -55,6 +61,10 @@ header .nav-links {
   text-decoration: none;
   text-decoration: none;
   color: #FDFEFF;
+}
+
+header a:hover {
+  color: #f5ba00;
 }
 
 header .fas {
@@ -101,7 +111,7 @@ header .fas {
 
 footer {
   height: 250px;
-  background-color: #26292A;
+  background-color: #181818;
   color: #FDFEFF;
   text-align: center;
   display: grid;
@@ -161,12 +171,12 @@ footer .customer-service a:hover {
 
 .products-container {
   height: 700px;
-  background-color: #ffffff;
+  background-color: black;
 }
 
 .landing {
   height: 300px;
-  background-image: url(/images/laptopLanding.jpg);
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -177,6 +187,7 @@ h1 {
   text-align: center;
   font-weight: lighter;
   border-bottom: 1px solid black;
+  color: #FDFEFF;
 }
 
 .products-feature {
@@ -189,9 +200,94 @@ h1 {
   padding-top: 1px;
 }
 
-.products-feature .product1, .products-feature .product2, .products-feature .product3 {
-  height: 230px;
+.products-feature .product1,
+.products-feature .product2,
+.products-feature .product3 {
+  height: 280px;
   width: 400px;
   border: 2px solid black;
+}
+
+.img-container-home {
+  display: grid;
+  justify-content: center;
+}
+
+.img-container-home img {
+  position: relative;
+  height: 210px;
+  top: 1%;
+}
+
+.btn-form {
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+}
+
+.btn-view {
+  height: 32px;
+  width: 150px;
+  border: none;
+  background-color: #f5ba00;
+  color: #000506;
+}
+
+.laptop-container {
+  height: 700px;
+  background-color: black;
+  color: #FDFEFF;
+}
+
+.laptop-container .laptop-landing {
+  position: relative;
+  top: 14%;
+  text-align: center;
+}
+
+.laptop-container .laptop-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 150px;
+}
+
+.laptop-container .laptop-list .laptop-product {
+  height: 280px;
+  width: 400px;
+  border: 2px solid black;
+  border: 2px solid white;
+  height: 420px;
+}
+
+.laptop-container .laptop-list .laptop-product .img-container-laptop {
+  display: grid;
+  justify-content: center;
+  position: relative;
+  top: 5%;
+}
+
+.laptop-container .laptop-list .laptop-product .img-container-laptop img {
+  position: relative;
+  height: 210px;
+  top: 1%;
+}
+
+.laptop-container .laptop-list .laptop-product .laptop-info {
+  display: grid;
+  justify-content: center;
+}
+
+.laptop-container .laptop-list .laptop-product .laptop-info li {
+  margin: 10px;
+}
+
+.laptop-container .laptop-list .laptop-product .btn-laptop-form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 15px;
 }
 /*# sourceMappingURL=style.css.map */

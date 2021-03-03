@@ -1,0 +1,38 @@
+.laptop-container {
+  height: 700px;
+  background-color: black;
+  color: $txt-color;
+
+  .laptop-landing {
+    position: relative;
+    top:14%;
+    text-align: center;
+  }
+  .laptop-list {
+    @include grid-format-3;
+    gap: 25px;
+    padding: 150px;
+
+    .laptop-product {
+      @include product-box;
+      border: 2px solid white;
+      height: 420px;
+
+      .img-container-laptop {
+        @include img-container;
+        position: relative;
+        top: 5%;
+      }
+
+      .laptop-info {
+        @include grid-property;
+        @include list-space;
+      }
+      .btn-laptop-form {
+        @include flex-property;
+        padding: 10px;
+        gap: 15px;
+      }
+    }
+  }
+}

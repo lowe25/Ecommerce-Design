@@ -1,24 +1,54 @@
-@mixin links-property{
-    text-decoration: none;
-    //Black #00050
-    color: $txt-color2;
+@mixin links-property {
+  text-decoration: none;
+  //Black #00050
+  color: $txt-color2;
 }
 
 @mixin links-property2 {
-    text-decoration: none;
-    //White #FDFEFF
-    color: $txt-color;
+  text-decoration: none;
+  //White #FDFEFF@
+  color: $txt-color;
 }
 
-@mixin grid-property{
-    display: flex;
-    justify-content: center;
-    gap:30px;
-    padding: 15px;
+@mixin flex-property {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin grid-property {
+  display: grid;
+  justify-content: center;
+}
+
+@mixin grid-format-3 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin image-format {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin img-container {
+  @include grid-property;
+  img {
+    position: relative;
+    height: 210px;
+    top: 1%;
+  }
+ }
+
+
+
+@mixin product-info {
+}
+
+@mixin list-space {
+  li {
+    margin: 10px;
+  }
 }

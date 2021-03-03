@@ -9,3 +9,16 @@
   width: 150px;
   border: none;
 }
+
+.btn-Addcart{
+height: 30px;
+width: 130px;
+}
+
+@mixin btn-primary{
+  height: 32px;
+  width: 150px;
+  border: none;
+  background-color: $primary-color;
+  color: $txt-color2;
+}

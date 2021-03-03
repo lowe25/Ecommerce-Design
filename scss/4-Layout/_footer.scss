@@ -1,6 +1,6 @@
 footer{
     height: 250px;
-    background-color:#26292A;
+    background-color:$nav-bg;
     color: $txt-color;
     text-align: center;
     display: grid;
@@ -13,7 +13,10 @@ footer{
     }
 
     .payment-partners{
-        @include grid-property;
+        @include flex-property;
+        gap:30px;
+        padding: 15px;
+
         img{
             height: 50px;
         }
@@ -26,7 +29,9 @@ footer{
         color:#128799;
     }
     .customer-service{
-       @include grid-property;
+       @include flex-property;
+       gap:30px;
+       padding: 15px;    
 
        .links{
            @include links-property2;
