@@ -284,6 +284,10 @@ h1 {
   margin: 10px;
 }
 
+.laptop-container .laptop-list .laptop-product .laptop-info ul li {
+  font-size: 15px;
+}
+
 .laptop-container .laptop-list .laptop-product .btn-laptop-form {
   display: flex;
   justify-content: center;
@@ -338,6 +342,10 @@ h1 {
 
 .monitor-container .monitor-list .monitor-product .monitor-info li {
   margin: 10px;
+}
+
+.monitor-container .monitor-list .monitor-product .monitor-info ul li {
+  font-size: 15px;
 }
 
 .monitor-container .monitor-list .monitor-product .btn-monitor-form {

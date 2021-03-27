@@ -27,6 +27,12 @@
      .monitor-info{
         @include grid-property;
         @include list-space;
+
+        ul{
+          li{
+            font-size: 15px;
+          }
+        }
      }
      .btn-monitor-form{
         @include flex-property;

@@ -7,9 +7,6 @@
     position: relative;
     top:14%;
     text-align: center;
-    p{
-     
-    }
   }
   .laptop-list {
     @include grid-format-3;
@@ -30,6 +27,12 @@
       .laptop-info {
         @include grid-property;
         @include list-space;
+
+        ul{
+          li{
+            font-size: 15px;
+          }
+        }
       }
       .btn-laptop-form {
         @include flex-property;
