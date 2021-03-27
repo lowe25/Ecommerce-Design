@@ -57,6 +57,50 @@ header li {
   padding: 14px;
 }
 
+header .comp {
+  position: absolute;
+  top: 40px;
+  left: 41.5%;
+  display: block;
+  transition: 0.5s;
+  width: 140px;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #181818;
+  line-height: 8px;
+}
+
+header .comp li a {
+  text-decoration: none;
+  color: #FDFEFF;
+}
+
+header .comp a:hover {
+  color: #f5ba00;
+}
+
+header .perip {
+  position: absolute;
+  top: 40px;
+  left: 47.7%;
+  display: block;
+  transition: 0.5s;
+  width: 100px;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #181818;
+  line-height: 5px;
+}
+
+header .perip li a {
+  text-decoration: none;
+  color: #FDFEFF;
+}
+
+header .perip a:hover {
+  color: #f5ba00;
+}
+
 header .nav-links {
   text-decoration: none;
   text-decoration: none;
@@ -69,6 +113,16 @@ header a:hover {
 
 header .fas {
   padding-left: 10px;
+}
+
+header ul li:hover .comp {
+  opacity: 1;
+  visibility: visible;
+}
+
+header ul li:hover .perip {
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav-burger {
@@ -353,5 +407,9 @@ h1 {
   justify-content: center;
   padding: 10px;
   gap: 15px;
+}
+
+.components-container {
+  height: 600px;
 }
 /*# sourceMappingURL=style.css.map */
