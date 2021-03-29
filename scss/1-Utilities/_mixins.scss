@@ -27,6 +27,13 @@
   align-items: center;
 }
 
+@mixin flex-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin image-format {
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,10 +49,15 @@
   }
  }
 
+ @mixin img-container2 {
+  @include grid-property;
+  img {
+    position: relative;
+    height: 170px;
+    top: 1%;
+  }
+ }
 
-
-@mixin product-info {
-}
 
 @mixin list-space {
   li {

@@ -14,6 +14,7 @@ header {
     list-style: none;
     padding: 14px;
   }
+  /*
   //Hover State Components
   .comp {
     position: absolute;
@@ -33,7 +34,8 @@ header {
       color: $primary-color;
     }
   }
-
+  */
+/*
   //Hover State Periperals
   .perip {
     position: absolute;
@@ -54,7 +56,7 @@ header {
       color: $primary-color;
     }
   }
-
+*/
   .nav-links {
     text-decoration: none;
     @include links-property2;
@@ -69,6 +71,7 @@ header {
 }
 
 //Hover State Components
+/*
 header ul li:hover .comp {
   opacity: 1;
   visibility: visible;
@@ -79,7 +82,7 @@ header ul li:hover .perip {
   opacity: 1;
   visibility: visible;
 }
-
+*/
 .nav-burger {
   position: absolute;
   top: 0.75rem;
@@ -112,10 +115,15 @@ header ul li:hover .perip {
   .nav-list.active {
     display: block;
   }
-
+  
   header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    ul li ul{
+      width: 100%;
+      z-index: 1;
+    }
   }
 }

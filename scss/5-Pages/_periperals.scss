@@ -1,0 +1,26 @@
+.periperals-container {
+  height: 580px;
+  background-color: black;
+  color: $txt-color;
+  @include grid-property;
+
+  .periperals-showcase {
+    @include grid-format-3;
+    padding: 40px;
+    gap: 15px;
+    .keyboard,
+    .mouse,
+    .headset {
+      @include product-box2;
+    }
+    .img-container-perip{
+      @include img-container2;
+    }
+    .periperal-name{
+      @include grid-property;
+      p {
+        padding: 10px;
+      }
+    }
+  }
+}

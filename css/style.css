@@ -46,6 +46,49 @@ header {
   background-color: #181818;
   color: #FDFEFF;
   border-bottom: 2px solid black;
+  /*
+  //Hover State Components
+  .comp {
+    position: absolute;
+    top: 40px;
+    left: 41.5%;
+    display: block;
+    transition: 0.5s;
+    width: 140px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: $nav-bg;
+    line-height: 8px;
+    li a {
+      @include links-property2;
+    }
+    a:hover {
+      color: $primary-color;
+    }
+  }
+  */
+  /*
+  //Hover State Periperals
+  .perip {
+    position: absolute;
+    top: 40px;
+    left: 47.7%;
+    display: block;
+    transition: 0.5s;
+    width: 100px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: $nav-bg;
+    line-height: 5px;
+
+    li a {
+      @include links-property2;
+    }
+    a:hover {
+      color: $primary-color;
+    }
+  }
+*/
 }
 
 header ul {
@@ -55,50 +98,6 @@ header ul {
 header li {
   list-style: none;
   padding: 14px;
-}
-
-header .comp {
-  position: absolute;
-  top: 40px;
-  left: 41.5%;
-  display: block;
-  transition: 0.5s;
-  width: 140px;
-  opacity: 0;
-  visibility: hidden;
-  background-color: #181818;
-  line-height: 8px;
-}
-
-header .comp li a {
-  text-decoration: none;
-  color: #FDFEFF;
-}
-
-header .comp a:hover {
-  color: #f5ba00;
-}
-
-header .perip {
-  position: absolute;
-  top: 40px;
-  left: 47.7%;
-  display: block;
-  transition: 0.5s;
-  width: 100px;
-  opacity: 0;
-  visibility: hidden;
-  background-color: #181818;
-  line-height: 5px;
-}
-
-header .perip li a {
-  text-decoration: none;
-  color: #FDFEFF;
-}
-
-header .perip a:hover {
-  color: #f5ba00;
 }
 
 header .nav-links {
@@ -115,16 +114,18 @@ header .fas {
   padding-left: 10px;
 }
 
+/*
 header ul li:hover .comp {
   opacity: 1;
   visibility: visible;
 }
 
+//Hover State Periperals
 header ul li:hover .perip {
   opacity: 1;
   visibility: visible;
 }
-
+*/
 .nav-burger {
   position: absolute;
   top: 0.75rem;
@@ -160,6 +161,10 @@ header ul li:hover .perip {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  header ul li ul {
+    width: 100%;
+    z-index: 1;
   }
 }
 
@@ -410,6 +415,95 @@ h1 {
 }
 
 .components-container {
-  height: 600px;
+  height: 579px;
+  background-color: black;
+  color: #FDFEFF;
+  display: grid;
+  justify-content: center;
+}
+
+.components-container .products-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 15px;
+}
+
+.components-container .products-showcase .gpu,
+.components-container .products-showcase .mobo {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
+}
+
+.components-container .products-showcase .gpu .img-container-comp,
+.components-container .products-showcase .mobo .img-container-comp {
+  display: grid;
+  justify-content: center;
+}
+
+.components-container .products-showcase .gpu .img-container-comp img,
+.components-container .products-showcase .mobo .img-container-comp img {
+  position: relative;
+  height: 170px;
+  top: 1%;
+}
+
+.components-container .products-showcase .gpu .product-name,
+.components-container .products-showcase .mobo .product-name {
+  display: grid;
+  justify-content: center;
+}
+
+.components-container .products-showcase .gpu .product-name p,
+.components-container .products-showcase .mobo .product-name p {
+  padding: 10px;
+}
+
+.periperals-container {
+  height: 580px;
+  background-color: black;
+  color: #FDFEFF;
+  display: grid;
+  justify-content: center;
+}
+
+.periperals-container .periperals-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 15px;
+}
+
+.periperals-container .periperals-showcase .keyboard,
+.periperals-container .periperals-showcase .mouse,
+.periperals-container .periperals-showcase .headset {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
+}
+
+.periperals-container .periperals-showcase .img-container-perip {
+  display: grid;
+  justify-content: center;
+}
+
+.periperals-container .periperals-showcase .img-container-perip img {
+  position: relative;
+  height: 170px;
+  top: 1%;
+}
+
+.periperals-container .periperals-showcase .periperal-name {
+  display: grid;
+  justify-content: center;
+}
+
+.periperals-container .periperals-showcase .periperal-name p {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

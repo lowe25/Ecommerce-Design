@@ -1,5 +1,11 @@
-@mixin product-box{
-    height: 280px;
-    width: 400px;
-    border: 2px solid black;
+@mixin product-box {
+  height: 280px;
+  width: 400px;
+  border: 2px solid black;
+}
+
+@mixin product-box2 {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
 }
