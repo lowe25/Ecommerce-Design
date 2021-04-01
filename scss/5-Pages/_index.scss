@@ -31,13 +31,5 @@ h1 {
   @include img-container;
 }
 
-.btn-form{
-  padding: 20px;
-  @include grid-property;
-}
-.btn-view{
-  @include btn-primary;
-}
-
 
 

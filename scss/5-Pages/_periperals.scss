@@ -19,6 +19,7 @@
     .periperal-name{
       @include grid-property;
       p {
+        text-align: center;
         padding: 10px;
       }
     }

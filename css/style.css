@@ -20,9 +20,34 @@ body {
   border: none;
 }
 
-.btn-Addcart {
+.btn-primary {
   height: 30px;
   width: 130px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-BrowseProd {
+  height: 32px;
+  width: 150px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-form {
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+}
+
+.btn-view {
+  height: 32px;
+  width: 150px;
+  border: none;
+  background-color: #f5ba00;
+  color: #000506;
 }
 
 .txt-email {
@@ -278,20 +303,6 @@ h1 {
   top: 1%;
 }
 
-.btn-form {
-  padding: 20px;
-  display: grid;
-  justify-content: center;
-}
-
-.btn-view {
-  height: 32px;
-  width: 150px;
-  border: none;
-  background-color: #f5ba00;
-  color: #000506;
-}
-
 .laptop-container {
   height: 700px;
   background-color: black;
@@ -459,6 +470,7 @@ h1 {
 
 .components-container .products-showcase .gpu .product-name p,
 .components-container .products-showcase .mobo .product-name p {
+  text-align: center;
   padding: 10px;
 }
 
@@ -504,6 +516,79 @@ h1 {
 }
 
 .periperals-container .periperals-showcase .periperal-name p {
+  text-align: center;
   padding: 10px;
+}
+
+.gpu-container, .gpu-intro {
+  height: 800px;
+  background-color: #000000;
+  color: #FDFEFF;
+  padding: 60px;
+}
+
+.gpu-container .gpu-showcase, .gpu-intro .gpu-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gpu-container .gpu-showcase .gpu-list, .gpu-intro .gpu-showcase .gpu-list {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
+}
+
+.gpu-intro {
+  height: 100px;
+}
+
+.gpu-intro h1 {
+  color: #f5ba00;
+  font-weight: bold;
+}
+
+.gpu-intro p {
+  text-align: center;
+  line-height: 1.6;
+  padding: 25px;
+}
+
+.motherboard-container, .motherboard-intro {
+  height: 700px;
+  background-color: #000000;
+  color: #FDFEFF;
+  padding: 60px;
+}
+
+.motherboard-container .motherboard-showcase, .motherboard-intro .motherboard-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.motherboard-container .motherboard-showcase .motherboard-list, .motherboard-intro .motherboard-showcase .motherboard-list {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
+}
+
+.motherboard-intro {
+  height: 100px;
+}
+
+.motherboard-intro h1 {
+  color: #f5ba00;
+  font-weight: bold;
+}
+
+.motherboard-intro p {
+  text-align: center;
+  line-height: 1.6;
+  padding: 21px;
 }
 /*# sourceMappingURL=style.css.map */

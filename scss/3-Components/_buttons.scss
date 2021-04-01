@@ -1,24 +1,35 @@
 .btn-subs {
   height: 33px;
   width: 150px;
-  border:none;
+  border: none;
   border-radius: 4px;
 }
-.btn-search{
+.btn-search {
   height: 28px;
   width: 150px;
   border: none;
 }
 
-.btn-Addcart{
-height: 30px;
-width: 130px;
+.btn-primary {
+  height: 30px;
+  width: 130px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-@mixin btn-primary{
+.btn-BrowseProd {
   height: 32px;
   width: 150px;
   border: none;
-  background-color: $primary-color;
-  color: $txt-color2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-form {
+  padding: 20px;
+  @include grid-property;
+}
+.btn-view {
+  @include btn-primary;
 }

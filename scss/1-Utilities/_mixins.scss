@@ -9,7 +9,7 @@
   //White #FDFEFF@
   color: $txt-color;
 }
-
+//Flex and Grids
 @mixin flex-property {
   display: flex;
   justify-content: center;
@@ -34,6 +34,7 @@
   align-items: center;
 }
 
+//Images
 @mixin image-format {
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,9 +59,17 @@
   }
  }
 
-
 @mixin list-space {
   li {
     margin: 10px;
   }
+}
+
+//Button
+@mixin btn-primary{
+  height: 32px;
+  width: 150px;
+  border: none;
+  background-color: $primary-color;
+  color: $txt-color2;
 }
