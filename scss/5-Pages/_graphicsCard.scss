@@ -1,29 +1,42 @@
 .gpu-container {
-    height: 800px;
-    background-color: $primary-bg-color;
-    color: $txt-color;
-    padding: 60px;
-  
-    .gpu-showcase {
-      @include grid-format-3;
-      gap: 20px;
-  
-      .gpu-list {
-        @include product-box2;
-      }
-    }
-  }
-.gpu-intro {
-    @extend .gpu-container;
-    height: 100px;
-    h1 {
-        color: $primary-color;
-        font-weight: bold;
-    }
-    p {
-      text-align: center;
-      line-height: 1.6;
-      padding: 25px;
-    }
-  }
+  height: 800px;
+  background-color: $primary-bg-color;
+  color: $txt-color;
+  padding: 60px;
 
+  .gpu-showcase {
+    @include grid-format-3;
+    gap: 20px;
+
+    .gpu-list {
+      @include product-box2;
+    }
+
+    .gpu-img {
+      @include img-container3;
+    }
+
+    .gpu-specs {
+      font-size: 14px;
+      text-align: center;
+    }
+    .gpu-btn{
+      @include flex-property;
+      padding-top: 10px;
+      gap: 10px;
+    }
+  }
+}
+.gpu-intro {
+  @extend .gpu-container;
+  height: 100px;
+  h1 {
+    color: $primary-color;
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+    line-height: 1.6;
+    padding: 25px;
+  }
+}

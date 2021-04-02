@@ -59,6 +59,15 @@
   }
  }
 
+ @mixin img-container3 {
+  @include grid-property;
+  img {
+    position: relative;
+    height: 180px;
+    top: 1%;
+  }
+ }
+
 @mixin list-space {
   li {
     margin: 10px;
