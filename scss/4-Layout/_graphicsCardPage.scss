@@ -1,0 +1,35 @@
+.graphicsCard-container{
+    height: 720px;
+    background-color: $primary-bg-color;
+    color: $txt-color;
+
+    .product-container{
+        @include grid-format-3;
+        gap: 100px;
+    }
+    .graphicsCard-info{
+        p{
+            padding:5px 10px;
+        }
+    }
+    .qty-container{
+        @include flex-property;
+        justify-content: start;
+        gap: 10px;
+        p{
+            padding:5px 10px;
+        }
+    }
+    .graphicsCard-btn{
+        padding: 10px;
+    }
+    .graphicsCard-specs{
+        h1{
+            padding: 10px;
+        }
+        .specs{
+            @include grid-property;
+            line-height: 1.6;
+        }
+    }
+}

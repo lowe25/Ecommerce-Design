@@ -25,7 +25,10 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
+.btn-minus,.btn-add{
+height: 31px;
+width: 30px;
+}
 .btn-form {
   padding: 20px;
   @include grid-property;

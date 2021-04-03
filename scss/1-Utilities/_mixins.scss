@@ -9,15 +9,16 @@
   //White #FDFEFF@
   color: $txt-color;
 }
-//Flex and Grids
-@mixin flex-property {
-  display: flex;
-  justify-content: center;
-}
-
+//Grid
 @mixin grid-property {
   display: grid;
   justify-content: center;
+}
+@mixin grid-format-2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin grid-format-3 {
@@ -27,6 +28,11 @@
   align-items: center;
 }
 
+//Flexbox
+@mixin flex-property {
+  display: flex;
+  justify-content: center;
+}
 @mixin flex-format {
   display: flex;
   flex-direction: column;

@@ -36,6 +36,11 @@ body {
   cursor: pointer;
 }
 
+.btn-minus, .btn-add {
+  height: 31px;
+  width: 30px;
+}
+
 .btn-form {
   padding: 20px;
   display: grid;
@@ -61,6 +66,11 @@ body {
   height: 28px;
   width: 300px;
   border: none;
+}
+
+.txt-quantity {
+  height: 27px;
+  width: 65px;
 }
 
 header {
@@ -636,5 +646,48 @@ h1 {
   text-align: center;
   line-height: 1.6;
   padding: 21px;
+}
+
+.graphicsCard-container {
+  height: 720px;
+  background-color: #000000;
+  color: #FDFEFF;
+}
+
+.graphicsCard-container .product-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.graphicsCard-container .graphicsCard-info p {
+  padding: 5px 10px;
+}
+
+.graphicsCard-container .qty-container {
+  display: flex;
+  justify-content: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.graphicsCard-container .qty-container p {
+  padding: 5px 10px;
+}
+
+.graphicsCard-container .graphicsCard-btn {
+  padding: 10px;
+}
+
+.graphicsCard-container .graphicsCard-specs h1 {
+  padding: 10px;
+}
+
+.graphicsCard-container .graphicsCard-specs .specs {
+  display: grid;
+  justify-content: center;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Ecommerce Website</title>
+    <title>The ASUS TUF Gaming GeForce® GTX 1660 6GB GDDR5
+    </title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/1a61a63e66.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header>
         <a href="index.html" class="nav-links">ASUS TUF Gaming</a>
@@ -47,30 +46,64 @@
             </li>
         </ul>
     </header>
-    <div class="components-container">
-        <div class="products-showcase">
-            <section class="gpu">
-                <div class="img-container-comp">
-                    <img src="./images/Introduction/gpu.png" alt="Asus Tuf Graphics Card">
-                </div>
-                <div class="product-name">
-                    <p>Graphics Cards</p>
-                    <a href="graphicsCard-Main.html"> <input type="button" class="btn-BrowseProd" value="Browse Product">
-                    </a>
-                </div>
-            </section>
-            <section class="mobo">
-                <div class="img-container-comp">
-                    <img src="./images/Introduction/mobo.png" alt="Asus Tuf Motherboard">
-                </div>
-                <div class="product-name">
-                    <p>Motherboards</p>
-                    <a href="motherBoard-Main.html"> <input type="button" class="btn-BrowseProd" value="Browse Product">
-                    </a>
-                </div>
-            </section>
-        </div>
-    </div>
+    <div class="graphicsCard-container">
+       <div class="product-container">
+           <section class="graphicsCard-image">
+            <img src="./images/Introduction/gpu.png" alt="Asus TUF RTX 3060">
+           </section>
+           <section class="graphicsCard-price">
+               <div class="graphicsCard-info">
+                <p>The ASUS TUF Gaming GeForce® GTX 1660 6GB GDDR5
+                </p>
+                <p>₱ 26,0000</p>
+               </div>
+               <div class="qty-container">
+                   <p>Quantity:</p>
+                   <input type="button" class="btn-minus" value="-">
+                   <input type="text"   class="txt-quantity"id="" value="0">
+                   <input type="button" class="btn-add" value="+">
+               </div>
+               <div class="graphicsCard-btn">
+                   <input type="button" class="btn-primary" value="Add to Cart">
+                   <input type="button" class="btn-primary" value="Add to Wishlist">
+
+               </div>
+           </section>
+       </div>
+       <div class="graphicsCard-specs">
+           <h1>Product Specifications</h1>
+           <ul class="specs">
+               <li>Graphic Engine
+                NVIDIA® GeForce RTX™ 3060 TI
+            </li>
+               <li>Bus Standard
+                PCI Express 4.0</li>
+               <li>OpenGL
+                OpenGL®4.6</li>
+               <li>Video Memory
+                12GB GDDR6</li>
+               <li>Engine Clock
+                OC Mode - 1882 MHz (Boost Clock)
+                Gaming Mode - 1852 MHz (Boost Clock)</li>
+               <li>CUDA Core
+                3584</li>
+               <li>Memory Speed
+                15 Gbps</li>
+               <li>Memory Interface
+                192-bit</li>
+               <li>Resolution
+                Digital Max Resolution 7680 x 4320</li>
+               <li>Maximum Display Support
+                4</li>
+               <li>Recommended PSU
+                750W</li>
+               <li>Power Connectors
+                1 x 8-pin</li>
+               <li>Slot
+                2.7 Slot</li>
+           </ul>
+       </div>
+    </div><!--Container-->
     <footer>
         <p>Subscribe to get the latest on sales, new release and more..</p>
         <form action="" class="subscription">
@@ -111,10 +144,5 @@
             </section>
         </div>
     </footer>
-    <div class="rights">
-        <p>Allrights Reserved 2021</p>
-    </div>
 </body>
-<script src="/js/nav.js"></script>
-
 </html>
