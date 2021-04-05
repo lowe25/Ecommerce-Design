@@ -1,0 +1,44 @@
+@mixin product-landing-container {
+    height: 520px;
+    background-color: $primary-bg-color;
+    color: $txt-color;
+    padding: 40px;
+  
+    .product-landing-showcase {
+      @include grid-format-3;
+      gap: 20px;
+  
+      .product-landing-list {
+        @include product-box2;
+  
+        .product-landing-img {
+          @include img-container3;
+        }
+        .product-landing-specs {
+          text-align: center;
+          font-size: 14px;
+        }
+        .product-landing-btn {
+          @include flex-property;
+          padding-top: 10px;
+          gap: 10px;
+        }
+      }
+    }
+  }
+  
+  @mixin product-landing-intro {
+    @include product-landing-container;
+    height: 90px;
+    padding-top: 10px;
+    h1 {
+      color: $primary-color;
+      font-weight: bold;
+    }
+    p {
+      text-align: center;
+      line-height: 1.6;
+      padding: 21px;
+    }
+  }
+  

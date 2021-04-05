@@ -13,6 +13,8 @@
 //Layout
 @import '../scss/4-Layout/navbar';
 @import '../scss/4-Layout/footer';
+@import '../scss/4-Layout/productPage1';
+@import '../scss/4-Layout/productLanding';
 
 //Pages
 @import '../scss/5-Pages/index';
@@ -22,4 +24,6 @@
 @import '../scss/5-Pages/periperals';
 @import '../scss/5-Pages/graphicsCard';
 @import '../scss/5-Pages/motherBoard';
-@import '../scss/4-Layout/graphicsCardPage';
+@import '../scss/5-Pages/keyboard';
+@import '../scss/5-Pages/mouse';
+@import '../scss/5-Pages/headset';

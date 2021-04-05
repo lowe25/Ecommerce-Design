@@ -1,16 +1,8 @@
 .monitor-container {
-  height: 700px;
+  height: 600px;
   background-color: black;
   color: $txt-color;
 
-  .monitor-landing {
-    position: relative;
-    top:14%;
-    text-align: center;
-    p{
-     
-    }
-  }
   .monitor-list {
     @include grid-format-3;
     gap: 25px;
@@ -41,5 +33,21 @@
      }
     }
 
+  }
+}
+.monitor-intro{
+  height: 100px;
+  background-color: $primary-bg-color;
+  color: $txt-color;
+  padding: 10px;
+  line-height: 1.6;
+  h1 {
+    color: $primary-color;
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+    line-height: 1.6;
+    padding: 25px;
   }
 }

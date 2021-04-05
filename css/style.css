@@ -263,7 +263,59 @@ footer .customer-service a:hover {
   text-align: center;
 }
 
-.products-container {
+.product-container {
+  height: 720px;
+  background-color: #000000;
+  color: #FDFEFF;
+}
+
+.product-container .product-content {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.product-container .product-content .product-img {
+  display: grid;
+  justify-content: center;
+}
+
+.product-container .product-content .product-img img {
+  height: 300px;
+}
+
+.product-container .product-info p {
+  padding: 5px 10px;
+}
+
+.product-container .qty-container {
+  display: flex;
+  justify-content: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.product-container .qty-container p {
+  padding: 5px 10px;
+}
+
+.product-container .product-btn {
+  padding: 10px;
+}
+
+.product-container .product-specs h1 {
+  padding: 10px;
+}
+
+.product-container .product-specs .specs {
+  display: grid;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.products1-container {
   height: 700px;
   background-color: black;
 }
@@ -313,16 +365,29 @@ h1 {
   top: 1%;
 }
 
+.laptop-landing {
+  height: 100px;
+  background-color: #000000;
+  color: #FDFEFF;
+  padding: 10px;
+  line-height: 1.6;
+}
+
+.laptop-landing h1 {
+  color: #f5ba00;
+  font-weight: bold;
+}
+
+.laptop-landing p {
+  text-align: center;
+  line-height: 1.6;
+  padding: 25px;
+}
+
 .laptop-container {
   height: 700px;
   background-color: black;
   color: #FDFEFF;
-}
-
-.laptop-container .laptop-landing {
-  position: relative;
-  top: 14%;
-  text-align: center;
 }
 
 .laptop-container .laptop-list {
@@ -376,15 +441,9 @@ h1 {
 }
 
 .monitor-container {
-  height: 700px;
+  height: 600px;
   background-color: black;
   color: #FDFEFF;
-}
-
-.monitor-container .monitor-landing {
-  position: relative;
-  top: 14%;
-  text-align: center;
 }
 
 .monitor-container .monitor-list {
@@ -433,6 +492,25 @@ h1 {
   justify-content: center;
   padding: 10px;
   gap: 15px;
+}
+
+.monitor-intro {
+  height: 100px;
+  background-color: #000000;
+  color: #FDFEFF;
+  padding: 10px;
+  line-height: 1.6;
+}
+
+.monitor-intro h1 {
+  color: #f5ba00;
+  font-weight: bold;
+}
+
+.monitor-intro p {
+  text-align: center;
+  line-height: 1.6;
+  padding: 25px;
 }
 
 .components-container {
@@ -648,46 +726,309 @@ h1 {
   padding: 21px;
 }
 
-.graphicsCard-container {
-  height: 720px;
+.keyboard-landing-intro {
+  height: 520px;
   background-color: #000000;
   color: #FDFEFF;
+  padding: 40px;
+  height: 90px;
+  padding-top: 10px;
 }
 
-.graphicsCard-container .product-container {
+.keyboard-landing-intro .product-landing-showcase {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 20px;
 }
 
-.graphicsCard-container .graphicsCard-info p {
-  padding: 5px 10px;
+.keyboard-landing-intro .product-landing-showcase .product-landing-list {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
 }
 
-.graphicsCard-container .qty-container {
+.keyboard-landing-intro .product-landing-showcase .product-landing-list .product-landing-img {
+  display: grid;
+  justify-content: center;
+}
+
+.keyboard-landing-intro .product-landing-showcase .product-landing-list .product-landing-img img {
+  position: relative;
+  height: 180px;
+  top: 1%;
+}
+
+.keyboard-landing-intro .product-landing-showcase .product-landing-list .product-landing-specs {
+  text-align: center;
+  font-size: 14px;
+}
+
+.keyboard-landing-intro .product-landing-showcase .product-landing-list .product-landing-btn {
   display: flex;
   justify-content: center;
-  justify-content: start;
+  padding-top: 10px;
   gap: 10px;
 }
 
-.graphicsCard-container .qty-container p {
-  padding: 5px 10px;
+.keyboard-landing-intro h1 {
+  color: #f5ba00;
+  font-weight: bold;
 }
 
-.graphicsCard-container .graphicsCard-btn {
-  padding: 10px;
+.keyboard-landing-intro p {
+  text-align: center;
+  line-height: 1.6;
+  padding: 21px;
 }
 
-.graphicsCard-container .graphicsCard-specs h1 {
-  padding: 10px;
+.keyboard-landing-container {
+  height: 520px;
+  background-color: #000000;
+  color: #FDFEFF;
+  padding: 40px;
 }
 
-.graphicsCard-container .graphicsCard-specs .specs {
+.keyboard-landing-container .product-landing-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.keyboard-landing-container .product-landing-showcase .product-landing-list {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
+}
+
+.keyboard-landing-container .product-landing-showcase .product-landing-list .product-landing-img {
   display: grid;
   justify-content: center;
+}
+
+.keyboard-landing-container .product-landing-showcase .product-landing-list .product-landing-img img {
+  position: relative;
+  height: 180px;
+  top: 1%;
+}
+
+.keyboard-landing-container .product-landing-showcase .product-landing-list .product-landing-specs {
+  text-align: center;
+  font-size: 14px;
+}
+
+.keyboard-landing-container .product-landing-showcase .product-landing-list .product-landing-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.mouse-landing-intro {
+  height: 520px;
+  background-color: #000000;
+  color: #FDFEFF;
+  padding: 40px;
+  height: 90px;
+  padding-top: 10px;
+}
+
+.mouse-landing-intro .product-landing-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.mouse-landing-intro .product-landing-showcase .product-landing-list {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
+}
+
+.mouse-landing-intro .product-landing-showcase .product-landing-list .product-landing-img {
+  display: grid;
+  justify-content: center;
+}
+
+.mouse-landing-intro .product-landing-showcase .product-landing-list .product-landing-img img {
+  position: relative;
+  height: 180px;
+  top: 1%;
+}
+
+.mouse-landing-intro .product-landing-showcase .product-landing-list .product-landing-specs {
+  text-align: center;
+  font-size: 14px;
+}
+
+.mouse-landing-intro .product-landing-showcase .product-landing-list .product-landing-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.mouse-landing-intro h1 {
+  color: #f5ba00;
+  font-weight: bold;
+}
+
+.mouse-landing-intro p {
+  text-align: center;
   line-height: 1.6;
+  padding: 21px;
+}
+
+.mouse-landing-container {
+  height: 520px;
+  background-color: #000000;
+  color: #FDFEFF;
+  padding: 40px;
+  height: 400px;
+}
+
+.mouse-landing-container .product-landing-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.mouse-landing-container .product-landing-showcase .product-landing-list {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
+}
+
+.mouse-landing-container .product-landing-showcase .product-landing-list .product-landing-img {
+  display: grid;
+  justify-content: center;
+}
+
+.mouse-landing-container .product-landing-showcase .product-landing-list .product-landing-img img {
+  position: relative;
+  height: 180px;
+  top: 1%;
+}
+
+.mouse-landing-container .product-landing-showcase .product-landing-list .product-landing-specs {
+  text-align: center;
+  font-size: 14px;
+}
+
+.mouse-landing-container .product-landing-showcase .product-landing-list .product-landing-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.headset-landing-container {
+  height: 520px;
+  background-color: #000000;
+  color: #FDFEFF;
+  padding: 40px;
+  height: 600px;
+}
+
+.headset-landing-container .product-landing-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.headset-landing-container .product-landing-showcase .product-landing-list {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
+}
+
+.headset-landing-container .product-landing-showcase .product-landing-list .product-landing-img {
+  display: grid;
+  justify-content: center;
+}
+
+.headset-landing-container .product-landing-showcase .product-landing-list .product-landing-img img {
+  position: relative;
+  height: 180px;
+  top: 1%;
+}
+
+.headset-landing-container .product-landing-showcase .product-landing-list .product-landing-specs {
+  text-align: center;
+  font-size: 14px;
+}
+
+.headset-landing-container .product-landing-showcase .product-landing-list .product-landing-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.headset-landing-intro {
+  height: 520px;
+  background-color: #000000;
+  color: #FDFEFF;
+  padding: 40px;
+  height: 90px;
+  padding-top: 10px;
+  height: 150px;
+}
+
+.headset-landing-intro .product-landing-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.headset-landing-intro .product-landing-showcase .product-landing-list {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
+}
+
+.headset-landing-intro .product-landing-showcase .product-landing-list .product-landing-img {
+  display: grid;
+  justify-content: center;
+}
+
+.headset-landing-intro .product-landing-showcase .product-landing-list .product-landing-img img {
+  position: relative;
+  height: 180px;
+  top: 1%;
+}
+
+.headset-landing-intro .product-landing-showcase .product-landing-list .product-landing-specs {
+  text-align: center;
+  font-size: 14px;
+}
+
+.headset-landing-intro .product-landing-showcase .product-landing-list .product-landing-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.headset-landing-intro h1 {
+  color: #f5ba00;
+  font-weight: bold;
+}
+
+.headset-landing-intro p {
+  text-align: center;
+  line-height: 1.6;
+  padding: 21px;
 }
 /*# sourceMappingURL=style.css.map */
