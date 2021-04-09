@@ -40,6 +40,10 @@
   align-items: center;
 }
 
+//Page
+@mixin container-height {
+  height: 700px;
+}
 //Images
 @mixin image-format {
   background-repeat: no-repeat;
