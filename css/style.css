@@ -264,7 +264,7 @@ footer .customer-service a:hover {
 }
 
 .product-container {
-  height: 810px;
+  height: 880px;
   background-color: #000000;
   color: #FDFEFF;
 }
@@ -283,7 +283,7 @@ footer .customer-service a:hover {
 }
 
 .product-container .product-content .product-img img {
-  height: 300px;
+  height: 250px;
 }
 
 .product-container .product-info p {
@@ -306,13 +306,21 @@ footer .customer-service a:hover {
 }
 
 .product-container .product-specs h1 {
-  padding: 10px;
+  padding: 15px;
 }
 
-.product-container .product-specs .specs {
+.product-container .product-specs .tbl-specs {
   display: grid;
   justify-content: center;
-  line-height: 1.6;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.product-container .product-specs .tbl-specs td,
+.product-container .product-specs .tbl-specs th {
+  border: 2px solid #dddddd;
+  padding: 8px;
+  text-align: left;
 }
 
 .products1-container {
