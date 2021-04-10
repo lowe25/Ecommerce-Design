@@ -370,11 +370,23 @@ footer .customer-service a:hover {
 }
 
 .landing {
-  height: 300px;
-  width: 100%;
+  height: 200px;
+  padding: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.landing h1 {
+  color: #f5ba00;
+  font-weight: bold;
+}
+
+.landing p {
+  color: #FDFEFF;
+  padding: 25px;
 }
 
 h1 {

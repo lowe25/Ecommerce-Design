@@ -3,10 +3,21 @@
   background-color: black;
 }
 .landing {
-  height: 300px;
-  width: 100%;
+  height: 200px;
+
+  padding: 20px;
   //background-image: url(/images/laptopLanding.jpg);
   @include image-format;
+  text-align: center;
+  line-height: 1.6;
+   h1{
+     color: $primary-color;
+     font-weight: bold;
+   }
+   p{
+     color: $txt-color;
+     padding: 25px;
+   }
 }
 h1 {
   margin-top: 15px;
