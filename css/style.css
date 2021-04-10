@@ -263,13 +263,31 @@ footer .customer-service a:hover {
   text-align: center;
 }
 
-.product-container {
-  height: 880px;
-  background-color: #000000;
-  color: #FDFEFF;
+/*Product Specs*/
+.product-specs {
+  font-size: 15px;
 }
 
-.product-container .product-content {
+.product-specs h1 {
+  padding: 15px;
+}
+
+.product-specs .tbl-specs {
+  display: grid;
+  justify-content: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.product-specs .tbl-specs td,
+.product-specs .tbl-specs th {
+  border-bottom: 1px solid #f4f4f4;
+  padding: 8px;
+  text-align: left;
+  width: 500px;
+}
+
+.product-content {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
@@ -277,50 +295,72 @@ footer .customer-service a:hover {
   gap: 100px;
 }
 
-.product-container .product-content .product-img {
+.product-content .product-img {
   display: grid;
   justify-content: center;
 }
 
-.product-container .product-content .product-img img {
+.product-content .product-img img {
   height: 250px;
 }
 
-.product-container .product-info p {
+.product-info p {
   padding: 5px 10px;
 }
 
-.product-container .qty-container {
+.qty-container {
   display: flex;
   justify-content: center;
   justify-content: start;
   gap: 10px;
 }
 
-.product-container .qty-container p {
+.qty-container p {
   padding: 5px 10px;
 }
 
-.product-container .product-btn {
+.product-btn {
   padding: 10px;
 }
 
-.product-container .product-specs h1 {
-  padding: 15px;
+.motherboard-container, .motherboard-intro {
+  height: 880px;
+  background-color: #000000;
+  color: #FDFEFF;
 }
 
-.product-container .product-specs .tbl-specs {
-  display: grid;
-  justify-content: center;
-  border-collapse: collapse;
-  width: 100%;
+.graphics-container {
+  height: 880px;
+  background-color: #000000;
+  color: #FDFEFF;
 }
 
-.product-container .product-specs .tbl-specs td,
-.product-container .product-specs .tbl-specs th {
-  border: 2px solid #dddddd;
-  padding: 8px;
-  text-align: left;
+.mouse-store-container {
+  height: 880px;
+  background-color: #000000;
+  color: #FDFEFF;
+  height: 1000px;
+}
+
+.keyboard-store-container {
+  height: 880px;
+  background-color: #000000;
+  color: #FDFEFF;
+  height: 1000px;
+}
+
+.headset-store-container {
+  height: 880px;
+  background-color: #000000;
+  color: #FDFEFF;
+  height: 1050px;
+}
+
+.laptop-store-container {
+  height: 880px;
+  background-color: #000000;
+  color: #FDFEFF;
+  height: 1000px;
 }
 
 .products1-container {
