@@ -1,51 +1,72 @@
-footer{
-    height: 250px;
-    background-color:$nav-bg;
-    color: $txt-color;
-    text-align: center;
-    display: grid;
-    align-content: center;
-    padding-top: 20px;
+footer {
+  height: 350px;
+  background-color: $nav-bg;
+  color: $txt-color;
+  text-align: center;
+  display: grid;
+  align-content: center;
+  padding-top: 20px;
 
-    .subscription{
-        display: block;
-        padding: 10px;
+  .subscription {
+    display: block;
+    padding: 10px;
+
+    .fields {
+      padding: 10px;
     }
+  }
 
-    .payment-partners{
-        @include flex-property;
-        gap:30px;
-        padding: 15px;
+  .payment-partners {
+    @include flex-property;
+    gap: 30px;
+    padding: 15px;
 
-        img{
-            height: 50px;
-        }
-        .american-exp{
-            padding: 5px;
-            height: 35px;
-        }
+    img {
+      height: 50px;
     }
-    .customer,.payment{
-        color:#128799;
+    .american-exp {
+      padding: 5px;
+      height: 35px;
+    }
+  }
+  .customer,
+  .payment {
+    color: #128799;
+  }
+  .customer-service {
+    @include flex-property;
+    gap: 30px;
+    padding: 15px;
+
+    .links {
+      @include links-property2;
+    }
+    a:hover {
+      color: black;
+    }
+  }
+}
+.rights {
+  padding-top: 10px;
+  height: 20px;
+  font-size: 12px;
+  background-color: #090c0f;
+  color: $txt-color;
+  text-align: center;
+}
+
+@include mobile-device(mobile-md) {
+  footer {
+      //16px
+      font-size: 1rem;
+    height: 520px;
+    .payment-partners {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
     }
     .customer-service{
-       @include flex-property;
-       gap:30px;
-       padding: 15px;    
-
-       .links{
-           @include links-property2;
-       }
-       a:hover{
-           color: black;
-       }
+        display: grid;
+        grid-template-columns: repeat(1, auto);
     }
+  }
 }
-.rights{
-    padding-top: 10px;
-    height: 20px;
-    font-size: 12px;
-    background-color:#090C0F;
-    color: $txt-color;
-    text-align: center;
-}  

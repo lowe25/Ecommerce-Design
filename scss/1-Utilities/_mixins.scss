@@ -27,6 +27,12 @@
   justify-content: center;
   align-items: center;
 }
+@mixin grid-format-4 {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  justify-content: center;
+  align-items: center;
+}
 
 //Flexbox
 @mixin flex-property {

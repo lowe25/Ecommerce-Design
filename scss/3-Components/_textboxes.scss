@@ -14,3 +14,10 @@
      height: 27px;
      width: 65px;
  }
+ 
+ @include mobile-device(mobile-md) {
+    .txt-email {
+      width: 100%;
+    }
+  }
+  

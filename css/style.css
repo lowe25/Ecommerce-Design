@@ -1,3 +1,13 @@
+@charset "UTF-8";
+/*Media Querys*/
+/*Screen Breakpoints*/
+/*Notes
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +19,7 @@ body {
 
 .btn-subs {
   height: 33px;
-  width: 150px;
+  width: 270px;
   border: none;
   border-radius: 4px;
 }
@@ -36,7 +46,8 @@ body {
   cursor: pointer;
 }
 
-.btn-minus, .btn-add {
+.btn-minus,
+.btn-add {
   height: 31px;
   width: 30px;
 }
@@ -55,6 +66,12 @@ body {
   color: #000506;
 }
 
+@media (max-width: 480px) {
+  .btn-subs {
+    width: 100%;
+  }
+}
+
 .txt-email {
   height: 31px;
   width: 270px;
@@ -71,6 +88,12 @@ body {
 .txt-quantity {
   height: 27px;
   width: 65px;
+}
+
+@media (max-width: 480px) {
+  .txt-email {
+    width: 100%;
+  }
 }
 
 header {
@@ -204,7 +227,7 @@ header ul li:hover .perip {
 }
 
 footer {
-  height: 250px;
+  height: 350px;
   background-color: #181818;
   color: #FDFEFF;
   text-align: center;
@@ -215,6 +238,10 @@ footer {
 
 footer .subscription {
   display: block;
+  padding: 10px;
+}
+
+footer .subscription .fields {
   padding: 10px;
 }
 
@@ -234,7 +261,8 @@ footer .payment-partners .american-exp {
   height: 35px;
 }
 
-footer .customer, footer .payment {
+footer .customer,
+footer .payment {
   color: #128799;
 }
 
@@ -258,9 +286,24 @@ footer .customer-service a:hover {
   padding-top: 10px;
   height: 20px;
   font-size: 12px;
-  background-color: #090C0F;
+  background-color: #090c0f;
   color: #FDFEFF;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 1rem;
+    height: 520px;
+  }
+  footer .payment-partners {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  footer .customer-service {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
 }
 
 /*Product Specs*/
@@ -365,12 +408,12 @@ footer .customer-service a:hover {
 }
 
 .products1-container {
-  height: 700px;
+  min-height: 700px;
   background-color: black;
 }
 
 .landing {
-  height: 200px;
+  min-height: 200px;
   padding: 20px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -386,7 +429,6 @@ footer .customer-service a:hover {
 
 .landing p {
   color: #FDFEFF;
-  padding: 25px;
 }
 
 h1 {
@@ -398,7 +440,7 @@ h1 {
 }
 
 .products-feature {
-  height: 300px;
+  min-height: 300px;
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
@@ -407,12 +449,9 @@ h1 {
   padding-top: 1px;
 }
 
-.products-feature .product1,
-.products-feature .product2,
-.products-feature .product3 {
+.products-feature .products {
   height: 280px;
   width: 400px;
-  border: 2px solid black;
 }
 
 .img-container-home {
@@ -424,6 +463,27 @@ h1 {
   position: relative;
   height: 210px;
   top: 1%;
+}
+
+/*Media Query*/
+@media (max-width: 480px) {
+  .products1-container {
+    font-size: 1rem;
+  }
+  .products1-container .landing p {
+    font-size: 15px;
+  }
+  .products1-container .products-feature {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .products1-container .products-feature .products {
+    height: 280px;
+    width: 400px;
+    width: 100px;
+  }
 }
 
 .laptop-landing {
@@ -463,7 +523,6 @@ h1 {
 .laptop-container .laptop-list .laptop-product {
   height: 280px;
   width: 400px;
-  border: 2px solid black;
   border: 2px solid white;
   height: 420px;
 }
@@ -519,7 +578,6 @@ h1 {
 .monitor-container .monitor-list .monitor-product {
   height: 280px;
   width: 400px;
-  border: 2px solid black;
   border: 2px solid white;
   height: 420px;
 }

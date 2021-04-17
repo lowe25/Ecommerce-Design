@@ -1,6 +1,6 @@
 .btn-subs {
   height: 33px;
-  width: 150px;
+  width: 270px;
   border: none;
   border-radius: 4px;
 }
@@ -25,9 +25,10 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.btn-minus,.btn-add{
-height: 31px;
-width: 30px;
+.btn-minus,
+.btn-add {
+  height: 31px;
+  width: 30px;
 }
 .btn-form {
   padding: 20px;
@@ -35,4 +36,10 @@ width: 30px;
 }
 .btn-view {
   @include btn-primary;
+}
+
+@include mobile-device(mobile-md) {
+  .btn-subs {
+    width: 100%;
+  }
 }

@@ -1,23 +1,20 @@
 .products1-container {
-  height: 700px;
+  min-height: 700px;
   background-color: black;
 }
 .landing {
-  height: 200px;
-
+  min-height: 200px;
   padding: 20px;
-  //background-image: url(/images/laptopLanding.jpg);
   @include image-format;
   text-align: center;
   line-height: 1.6;
-   h1{
-     color: $primary-color;
-     font-weight: bold;
-   }
-   p{
-     color: $txt-color;
-     padding: 25px;
-   }
+  h1 {
+    color: $primary-color;
+    font-weight: bold;
+  }
+  p {
+    color: $txt-color;
+  }
 }
 h1 {
   margin-top: 15px;
@@ -27,20 +24,35 @@ h1 {
   color: $txt-color;
 }
 .products-feature {
-  height: 300px;
+  min-height: 300px;
   @include grid-format-3;
   gap: 30px;
   padding-top: 1px;
 
-  .product1,
-  .product2,
-  .product3 {
+  .products {
     @include product-box;
   }
 }
-.img-container-home{
+.img-container-home {
   @include img-container;
 }
 
-
-
+/*Media Query*/
+@include mobile-device(mobile-md) {
+  .products1-container {
+    .landing{
+      p{
+       font-size: 15px; 
+      }
+    }
+    //16px
+    font-size: 1rem;
+    .products-feature {
+      @include grid-format-4;
+      .products {
+        @include product-box;
+        width: 100px;
+      }
+    }
+  }
+}
