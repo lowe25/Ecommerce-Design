@@ -1,5 +1,5 @@
 .components-container {
-  height: 579px;
+  min-height: 579px;
   background-color: black;
   color: $txt-color;
   @include grid-property;
@@ -24,4 +24,17 @@
       }
     }
   }
+}
+
+@include mobile-device(mobile-md) {
+.components-container{
+
+  .products-showcase{
+    @include grid-row;
+    .mobo,.gpu{
+      @include product-box2;
+      width: 300px;
+    }
+  }
+}
 }

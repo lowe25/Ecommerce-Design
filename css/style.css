@@ -470,7 +470,7 @@ h1 {
   .products1-container {
     font-size: 1rem;
   }
-  .products1-container .landing p {
+  .products1-container .landing {
     font-size: 15px;
   }
   .products1-container .products-feature {
@@ -487,7 +487,7 @@ h1 {
 }
 
 .laptop-landing {
-  height: 100px;
+  min-height: 100px;
   background-color: #000000;
   color: #FDFEFF;
   padding: 10px;
@@ -506,9 +506,10 @@ h1 {
 }
 
 .laptop-container {
-  height: 700px;
+  min-height: 700px;
   background-color: black;
   color: #FDFEFF;
+  padding: 12px;
 }
 
 .laptop-container .laptop-list {
@@ -517,7 +518,6 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  padding: 150px;
 }
 
 .laptop-container .laptop-list .laptop-product {
@@ -560,8 +560,23 @@ h1 {
   gap: 15px;
 }
 
+@media (max-width: 480px) {
+  .laptop-container .laptop-list {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .laptop-container .laptop-list .laptop-info {
+    font-size: 15px;
+  }
+  .laptop-container .laptop-list .laptop-product {
+    width: 310px;
+  }
+}
+
 .monitor-container {
-  height: 600px;
+  min-height: 600px;
   background-color: black;
   color: #FDFEFF;
 }
@@ -614,7 +629,7 @@ h1 {
 }
 
 .monitor-intro {
-  height: 100px;
+  min-height: 100px;
   background-color: #000000;
   color: #FDFEFF;
   padding: 10px;
@@ -632,8 +647,24 @@ h1 {
   padding: 25px;
 }
 
+@media (max-width: 480px) {
+  .monitor-container .monitor-list {
+    padding: 1px 0 10px 0;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .monitor-container .monitor-list .monitor-product {
+    width: 300px;
+  }
+  .monitor-intro {
+    font-size: 16px;
+  }
+}
+
 .components-container {
-  height: 579px;
+  min-height: 579px;
   background-color: black;
   color: #FDFEFF;
   display: grid;
@@ -681,8 +712,23 @@ h1 {
   padding: 10px;
 }
 
+@media (max-width: 480px) {
+  .components-container .products-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .components-container .products-showcase .mobo, .components-container .products-showcase .gpu {
+    height: 250px;
+    width: 450px;
+    border: 2px solid white;
+    width: 300px;
+  }
+}
+
 .periperals-container {
-  height: 580px;
+  min-height: 580px;
   background-color: black;
   color: #FDFEFF;
   display: grid;
@@ -725,6 +771,21 @@ h1 {
 .periperals-container .periperals-showcase .periperal-name p {
   text-align: center;
   padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .periperals-container .periperals-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .periperals-container .periperals-showcase .keyboard,
+  .periperals-container .periperals-showcase .mouse,
+  .periperals-container .periperals-showcase .headset {
+    width: 280px;
+    padding: 10px;
+  }
 }
 
 .gpu-container, .gpu-intro {

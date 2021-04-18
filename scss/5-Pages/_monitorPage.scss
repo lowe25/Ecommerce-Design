@@ -1,5 +1,5 @@
 .monitor-container {
-  height: 600px;
+  min-height: 600px;
   background-color: black;
   color: $txt-color;
 
@@ -8,35 +8,34 @@
     gap: 25px;
     padding: 150px;
 
-    .monitor-product{
-        @include product-box;
-        border: 2px solid white;
-        height: 420px;
+    .monitor-product {
+      @include product-box;
+      border: 2px solid white;
+      height: 420px;
 
-        .img-container-monitor{
-            @include img-container;
-        }
-     .monitor-info{
+      .img-container-monitor {
+        @include img-container;
+      }
+      .monitor-info {
         @include grid-property;
         @include list-space;
 
-        ul{
-          li{
+        ul {
+          li {
             font-size: 15px;
           }
         }
-     }
-     .btn-monitor-form{
+      }
+      .btn-monitor-form {
         @include flex-property;
         padding: 10px;
         gap: 15px;
-     }
+      }
     }
-
   }
 }
-.monitor-intro{
-  height: 100px;
+.monitor-intro {
+  min-height: 100px;
   background-color: $primary-bg-color;
   color: $txt-color;
   padding: 10px;
@@ -49,5 +48,21 @@
     text-align: center;
     line-height: 1.6;
     padding: 25px;
+  }
+}
+
+@include mobile-device(mobile-md) {
+  .monitor-container {
+    .monitor-list {
+      padding: 1px 0 10px 0;
+      @include grid-row;
+      .monitor-product {
+        width: 300px;
+      }
+   
+    }
+  }
+  .monitor-intro{
+    font-size: 16px;
   }
 }

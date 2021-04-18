@@ -1,5 +1,5 @@
 .laptop-landing {
-  height: 100px;
+  min-height: 100px;
   background-color: $primary-bg-color;
   color: $txt-color;
   padding: 10px;
@@ -16,14 +16,14 @@
 }
 
 .laptop-container {
-  height: 700px;
+  min-height: 700px;
   background-color: black;
   color: $txt-color;
+  padding: 12px;
 
   .laptop-list {
     @include grid-format-3;
     gap: 25px;
-    padding: 150px;
 
     .laptop-product {
       @include product-box;
@@ -53,4 +53,19 @@
       }
     }
   }
+}
+
+@include mobile-device(mobile-md){
+.laptop-container{
+  .laptop-list{
+    @include grid-row;
+
+    .laptop-info{
+      font-size: 15px;
+    }
+    .laptop-product{
+      width: 310px;
+    }
+  }
+}
 }
