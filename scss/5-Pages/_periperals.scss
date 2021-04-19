@@ -13,10 +13,10 @@
     .headset {
       @include product-box2;
     }
-    .img-container-perip{
+    .img-container-perip {
       @include img-container2;
     }
-    .periperal-name{
+    .periperal-name {
       @include grid-property;
       p {
         text-align: center;
@@ -26,16 +26,40 @@
   }
 }
 
-@include mobile-device(mobile-md){
-.periperals-container{
-  .periperals-showcase{
-   @include grid-row;
-   .keyboard,
-   .mouse,
-   .headset{
-     width: 280px;
-     padding: 10px;
-   }
+//Mobile
+@include mobile-device(mobile-md) {
+  .periperals-container {
+    .periperals-showcase {
+      @include grid-row;
+      .keyboard,
+      .mouse,
+      .headset {
+        width: 280px;
+        padding: 10px;
+      }
+    }
   }
 }
+
+@include mobile-device-lg(mobile-lg, tablet-sm){
+  .periperals-container{
+    .periperals-showcase{
+      @include grid-row;
+    }
+  }
+}
+//Tablet
+@include tablet-device(tablet-sm,tablet-md){
+  .periperals-container{
+    .periperals-showcase{
+      @include grid-row
+    }
+  }
+}
+@include screen-lg(tablet-lg,screen-lg){
+  .periperals-container{
+    .periperals-showcase{
+      @include grid-format-4;
+    }
+  }
 }

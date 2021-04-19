@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/4-Layout/productPage.scss"
-    ],
-    "names": [],
-    "file": "productPage.css"
-}

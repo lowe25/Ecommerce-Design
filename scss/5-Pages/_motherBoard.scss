@@ -1,8 +1,8 @@
 .motherboard-container {
-  height: 700px;
+  min-height: 500px;
   background-color: $primary-bg-color;
   color: $txt-color;
-  padding: 60px;
+  padding: 20px;
 
   .motherboard-showcase {
     @include grid-format-3;
@@ -29,8 +29,7 @@
 
 .motherboard-intro {
   @extend .motherboard-container;
-  height: 100px;
-
+  min-height: 100px;
   h1 {
     color: $primary-color;
     font-weight: bold;
@@ -38,6 +37,47 @@
   p {
     text-align: center;
     line-height: 1.6;
-    padding: 21px;
+    
+  }
+}
+//Mobile
+@include mobile-device(mobile-md) {
+  .motherboard-container {
+    .motherboard-showcase {
+      @include grid-format-4;
+      .motherboard-list{
+        height: 280px;
+        width: 285px;
+      }
+      .motherboard-btn{
+        padding-top: 55px;
+      }
+    }
+  }
+}
+
+@include mobile-device-lg(mobile-lg, tablet-sm){
+  .motherboard-container{
+    .motherboard-showcase{
+      @include grid-format-4;
+    }
+  }
+}
+
+//Tablet
+@include tablet-device(tablet-sm,tablet-md){
+  .motherboard-container{
+    .motherboard-showcase{
+      @include grid-format-4;
+    }
+  }
+}
+
+//Screen Large
+@include screen-lg(tablet-lg, screen-xl){
+  .motherboard-container{
+    .motherboard-showcase{
+      @include grid-format-2;
+    }
   }
 }

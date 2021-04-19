@@ -2,8 +2,8 @@
   min-height: 100px;
   background-color: $primary-bg-color;
   color: $txt-color;
-  padding: 10px;
   line-height: 1.6;
+  padding: 10px;
   h1 {
     color: $primary-color;
     font-weight: bold;
@@ -16,10 +16,9 @@
 }
 
 .laptop-container {
-  min-height: 700px;
+  min-height: 470px;
   background-color: black;
   color: $txt-color;
-  padding: 12px;
 
   .laptop-list {
     @include grid-format-3;
@@ -55,17 +54,47 @@
   }
 }
 
-@include mobile-device(mobile-md){
-.laptop-container{
-  .laptop-list{
-    @include grid-row;
+//Mobile
+@include mobile-device(mobile-md) {
+  .laptop-container {
+    .laptop-list {
+      @include grid-row;
 
-    .laptop-info{
-      font-size: 15px;
-    }
-    .laptop-product{
-      width: 310px;
+      .laptop-info {
+        font-size: 15px;
+      }
+      .laptop-product {
+        width: 310px;
+      }
     }
   }
 }
+
+
+@include mobile-device-lg(mobile-lg, tablet-sm){
+  .laptop-container{
+    padding: 10px;
+    .laptop-list{
+      @include grid-row;
+    }
+  }
+}
+
+//Tablet
+@include tablet-device(tablet-sm,tablet-md){
+  .laptop-container{
+    padding: 10px;
+    .laptop-list{
+      @include grid-row;
+    }
+  }
+}
+
+@include screen-lg(tablet-lg,screen-lg){
+  .laptop-container{
+    .laptop-list{
+      @include grid-format-4;
+      padding: 10px;
+    }
+  }
 }

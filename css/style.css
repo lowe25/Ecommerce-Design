@@ -367,10 +367,105 @@ footer .customer-service a:hover {
   padding: 10px;
 }
 
-.motherboard-container, .motherboard-intro {
-  height: 880px;
+.product-landing-intro {
+  min-height: 90px;
+  padding-top: 10px;
   background-color: #000000;
   color: #FDFEFF;
+}
+
+.product-landing-intro h1 {
+  color: #f5ba00;
+  font-weight: bold;
+}
+
+.product-landing-intro p {
+  text-align: center;
+  line-height: 1.6;
+  padding: 21px;
+}
+
+.product-landing-container {
+  min-height: 520px;
+  background-color: #000000;
+  color: #FDFEFF;
+}
+
+.product-landing-container .product-landing-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.product-landing-container .product-landing-showcase .product-landing-list {
+  height: 250px;
+  width: 450px;
+  border: 2px solid white;
+}
+
+.product-landing-container .product-landing-showcase .product-landing-list .product-landing-img {
+  display: grid;
+  justify-content: center;
+}
+
+.product-landing-container .product-landing-showcase .product-landing-list .product-landing-img img {
+  position: relative;
+  height: 180px;
+  top: 1%;
+}
+
+.product-landing-container .product-landing-showcase .product-landing-list .product-landing-specs {
+  text-align: center;
+  font-size: 14px;
+}
+
+.product-landing-container .product-landing-showcase .product-landing-list .product-landing-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .product-landing-container .product-landing-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .product-landing-container .product-landing-showcase .product-landing-list {
+    width: 300px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .product-landing-container .product-landing-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-landing-container .product-landing-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1418px) {
+  .product-landing-container .product-landing-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .graphics-container {
@@ -486,12 +581,30 @@ h1 {
   }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .products1-container .products-feature {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .products1-container .products-feature {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .laptop-landing {
   min-height: 100px;
   background-color: #000000;
   color: #FDFEFF;
-  padding: 10px;
   line-height: 1.6;
+  padding: 10px;
 }
 
 .laptop-landing h1 {
@@ -506,10 +619,9 @@ h1 {
 }
 
 .laptop-container {
-  min-height: 700px;
+  min-height: 470px;
   background-color: black;
   color: #FDFEFF;
-  padding: 12px;
 }
 
 .laptop-container .laptop-list {
@@ -575,8 +687,42 @@ h1 {
   }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .laptop-container {
+    padding: 10px;
+  }
+  .laptop-container .laptop-list {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .laptop-container {
+    padding: 10px;
+  }
+  .laptop-container .laptop-list {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1270px) {
+  .laptop-container .laptop-list {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
 .monitor-container {
-  min-height: 600px;
+  min-height: 470px;
   background-color: black;
   color: #FDFEFF;
 }
@@ -587,7 +733,6 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  padding: 150px;
 }
 
 .monitor-container .monitor-list .monitor-product {
@@ -663,6 +808,34 @@ h1 {
   }
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+  .monitor-container .monitor-list {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .monitor-container .monitor-list {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1270px) {
+  .monitor-container .monitor-list {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
 .components-container {
   min-height: 579px;
   background-color: black;
@@ -727,6 +900,24 @@ h1 {
   }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .components-container .products-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .components-container .products-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .periperals-container {
   min-height: 580px;
   background-color: black;
@@ -788,11 +979,37 @@ h1 {
   }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .periperals-container .periperals-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .periperals-container .periperals-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1270px) {
+  .periperals-container .periperals-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .gpu-container, .gpu-intro {
-  height: 800px;
+  min-height: 800px;
   background-color: #000000;
   color: #FDFEFF;
-  padding: 60px;
 }
 
 .gpu-container .gpu-showcase, .gpu-intro .gpu-showcase {
@@ -801,6 +1018,7 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 20px;
 }
 
 .gpu-container .gpu-showcase .gpu-list, .gpu-intro .gpu-showcase .gpu-list {
@@ -833,7 +1051,8 @@ h1 {
 }
 
 .gpu-intro {
-  height: 100px;
+  min-height: 100px;
+  padding: 10px;
 }
 
 .gpu-intro h1 {
@@ -847,11 +1066,59 @@ h1 {
   padding: 25px;
 }
 
+@media (max-width: 480px) {
+  .gpu-container .gpu-showcase, .gpu-intro .gpu-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .gpu-container .gpu-showcase .gpu-list, .gpu-intro .gpu-showcase .gpu-list {
+    height: 280px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .gpu-container .gpu-showcase, .gpu-intro .gpu-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .gpu-container .gpu-showcase .gpu-list, .gpu-intro .gpu-showcase .gpu-list {
+    height: 280px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gpu-container .gpu-showcase, .gpu-intro .gpu-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .gpu-container .gpu-showcase .gpu-list, .gpu-intro .gpu-showcase .gpu-list {
+    height: 280px;
+    width: 420px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1418px) {
+  .gpu-container .gpu-showcase, .gpu-intro .gpu-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .motherboard-container, .motherboard-intro {
-  height: 700px;
+  min-height: 500px;
   background-color: #000000;
   color: #FDFEFF;
-  padding: 60px;
+  padding: 20px;
 }
 
 .motherboard-container .motherboard-showcase, .motherboard-intro .motherboard-showcase {
@@ -892,7 +1159,7 @@ h1 {
 }
 
 .motherboard-intro {
-  height: 100px;
+  min-height: 100px;
 }
 
 .motherboard-intro h1 {
@@ -903,313 +1170,49 @@ h1 {
 .motherboard-intro p {
   text-align: center;
   line-height: 1.6;
-  padding: 21px;
 }
 
-.keyboard-landing-intro {
-  height: 520px;
-  background-color: #000000;
-  color: #FDFEFF;
-  padding: 40px;
-  height: 90px;
-  padding-top: 10px;
+@media (max-width: 480px) {
+  .motherboard-container .motherboard-showcase, .motherboard-intro .motherboard-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .motherboard-container .motherboard-showcase .motherboard-list, .motherboard-intro .motherboard-showcase .motherboard-list {
+    height: 280px;
+    width: 285px;
+  }
+  .motherboard-container .motherboard-showcase .motherboard-btn, .motherboard-intro .motherboard-showcase .motherboard-btn {
+    padding-top: 55px;
+  }
 }
 
-.keyboard-landing-intro .product-landing-showcase {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+@media (min-width: 481px) and (max-width: 768px) {
+  .motherboard-container .motherboard-showcase, .motherboard-intro .motherboard-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.keyboard-landing-intro .product-landing-showcase .product-landing-list {
-  height: 250px;
-  width: 450px;
-  border: 2px solid white;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .motherboard-container .motherboard-showcase, .motherboard-intro .motherboard-showcase {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.keyboard-landing-intro .product-landing-showcase .product-landing-list .product-landing-img {
-  display: grid;
-  justify-content: center;
-}
-
-.keyboard-landing-intro .product-landing-showcase .product-landing-list .product-landing-img img {
-  position: relative;
-  height: 180px;
-  top: 1%;
-}
-
-.keyboard-landing-intro .product-landing-showcase .product-landing-list .product-landing-specs {
-  text-align: center;
-  font-size: 14px;
-}
-
-.keyboard-landing-intro .product-landing-showcase .product-landing-list .product-landing-btn {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  gap: 10px;
-}
-
-.keyboard-landing-intro h1 {
-  color: #f5ba00;
-  font-weight: bold;
-}
-
-.keyboard-landing-intro p {
-  text-align: center;
-  line-height: 1.6;
-  padding: 21px;
-}
-
-.keyboard-landing-container {
-  height: 520px;
-  background-color: #000000;
-  color: #FDFEFF;
-  padding: 40px;
-}
-
-.keyboard-landing-container .product-landing-showcase {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.keyboard-landing-container .product-landing-showcase .product-landing-list {
-  height: 250px;
-  width: 450px;
-  border: 2px solid white;
-}
-
-.keyboard-landing-container .product-landing-showcase .product-landing-list .product-landing-img {
-  display: grid;
-  justify-content: center;
-}
-
-.keyboard-landing-container .product-landing-showcase .product-landing-list .product-landing-img img {
-  position: relative;
-  height: 180px;
-  top: 1%;
-}
-
-.keyboard-landing-container .product-landing-showcase .product-landing-list .product-landing-specs {
-  text-align: center;
-  font-size: 14px;
-}
-
-.keyboard-landing-container .product-landing-showcase .product-landing-list .product-landing-btn {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  gap: 10px;
-}
-
-.mouse-landing-intro {
-  height: 520px;
-  background-color: #000000;
-  color: #FDFEFF;
-  padding: 40px;
-  height: 90px;
-  padding-top: 10px;
-}
-
-.mouse-landing-intro .product-landing-showcase {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.mouse-landing-intro .product-landing-showcase .product-landing-list {
-  height: 250px;
-  width: 450px;
-  border: 2px solid white;
-}
-
-.mouse-landing-intro .product-landing-showcase .product-landing-list .product-landing-img {
-  display: grid;
-  justify-content: center;
-}
-
-.mouse-landing-intro .product-landing-showcase .product-landing-list .product-landing-img img {
-  position: relative;
-  height: 180px;
-  top: 1%;
-}
-
-.mouse-landing-intro .product-landing-showcase .product-landing-list .product-landing-specs {
-  text-align: center;
-  font-size: 14px;
-}
-
-.mouse-landing-intro .product-landing-showcase .product-landing-list .product-landing-btn {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  gap: 10px;
-}
-
-.mouse-landing-intro h1 {
-  color: #f5ba00;
-  font-weight: bold;
-}
-
-.mouse-landing-intro p {
-  text-align: center;
-  line-height: 1.6;
-  padding: 21px;
-}
-
-.mouse-landing-container {
-  height: 520px;
-  background-color: #000000;
-  color: #FDFEFF;
-  padding: 40px;
-  height: 400px;
-}
-
-.mouse-landing-container .product-landing-showcase {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.mouse-landing-container .product-landing-showcase .product-landing-list {
-  height: 250px;
-  width: 450px;
-  border: 2px solid white;
-}
-
-.mouse-landing-container .product-landing-showcase .product-landing-list .product-landing-img {
-  display: grid;
-  justify-content: center;
-}
-
-.mouse-landing-container .product-landing-showcase .product-landing-list .product-landing-img img {
-  position: relative;
-  height: 180px;
-  top: 1%;
-}
-
-.mouse-landing-container .product-landing-showcase .product-landing-list .product-landing-specs {
-  text-align: center;
-  font-size: 14px;
-}
-
-.mouse-landing-container .product-landing-showcase .product-landing-list .product-landing-btn {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  gap: 10px;
-}
-
-.headset-landing-container {
-  height: 520px;
-  background-color: #000000;
-  color: #FDFEFF;
-  padding: 40px;
-  height: 600px;
-}
-
-.headset-landing-container .product-landing-showcase {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.headset-landing-container .product-landing-showcase .product-landing-list {
-  height: 250px;
-  width: 450px;
-  border: 2px solid white;
-}
-
-.headset-landing-container .product-landing-showcase .product-landing-list .product-landing-img {
-  display: grid;
-  justify-content: center;
-}
-
-.headset-landing-container .product-landing-showcase .product-landing-list .product-landing-img img {
-  position: relative;
-  height: 180px;
-  top: 1%;
-}
-
-.headset-landing-container .product-landing-showcase .product-landing-list .product-landing-specs {
-  text-align: center;
-  font-size: 14px;
-}
-
-.headset-landing-container .product-landing-showcase .product-landing-list .product-landing-btn {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  gap: 10px;
-}
-
-.headset-landing-intro {
-  height: 520px;
-  background-color: #000000;
-  color: #FDFEFF;
-  padding: 40px;
-  height: 90px;
-  padding-top: 10px;
-  height: 150px;
-}
-
-.headset-landing-intro .product-landing-showcase {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.headset-landing-intro .product-landing-showcase .product-landing-list {
-  height: 250px;
-  width: 450px;
-  border: 2px solid white;
-}
-
-.headset-landing-intro .product-landing-showcase .product-landing-list .product-landing-img {
-  display: grid;
-  justify-content: center;
-}
-
-.headset-landing-intro .product-landing-showcase .product-landing-list .product-landing-img img {
-  position: relative;
-  height: 180px;
-  top: 1%;
-}
-
-.headset-landing-intro .product-landing-showcase .product-landing-list .product-landing-specs {
-  text-align: center;
-  font-size: 14px;
-}
-
-.headset-landing-intro .product-landing-showcase .product-landing-list .product-landing-btn {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  gap: 10px;
-}
-
-.headset-landing-intro h1 {
-  color: #f5ba00;
-  font-weight: bold;
-}
-
-.headset-landing-intro p {
-  text-align: center;
-  line-height: 1.6;
-  padding: 21px;
+@media (min-width: 1025px) and (max-width: 1418px) {
+  .motherboard-container .motherboard-showcase, .motherboard-intro .motherboard-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .monitor-store-container {

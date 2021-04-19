@@ -26,9 +26,9 @@
   }
 }
 
+//Mobile
 @include mobile-device(mobile-md) {
 .components-container{
-
   .products-showcase{
     @include grid-row;
     .mobo,.gpu{
@@ -37,4 +37,20 @@
     }
   }
 }
+}
+
+@include mobile-device-lg(mobile-lg, tablet-sm){
+  .components-container{
+    .products-showcase{
+      @include grid-format-4;
+    }
+  }
+}
+//Tablet
+@include tablet-device(tablet-sm,tablet-md){
+  .components-container{
+    .products-showcase{
+    @include grid-row;
+    }
+  }
 }

@@ -1,12 +1,14 @@
+
 .gpu-container {
-  height: 800px;
+  min-height: 800px;
   background-color: $primary-bg-color;
   color: $txt-color;
-  padding: 60px;
+
 
   .gpu-showcase {
     @include grid-format-3;
     gap: 20px;
+    padding: 20px;
 
     .gpu-list {
       @include product-box2;
@@ -29,7 +31,8 @@
 }
 .gpu-intro {
   @extend .gpu-container;
-  height: 100px;
+  min-height: 100px;
+  padding: 10px;
   h1 {
     color: $primary-color;
     font-weight: bold;
@@ -38,5 +41,51 @@
     text-align: center;
     line-height: 1.6;
     padding: 25px;
+  }
+}
+
+//Mobile
+@include mobile-device(mobile-md){
+  .gpu-container{
+    .gpu-showcase{
+      @include grid-row;
+      .gpu-list{
+        height: 280px;
+        width: 300px;
+      }
+    }
+  }
+}
+
+@include mobile-device-lg(mobile-lg, tablet-sm){
+  .gpu-container{
+    .gpu-showcase{
+      @include grid-row;
+      .gpu-list{
+        height: 280px;
+        width: 400px;
+      }
+    }
+  }
+}
+
+//Tablet
+@include tablet-device(tablet-sm, tablet-md){
+  .gpu-container{
+    .gpu-showcase{
+      @include grid-row;
+      .gpu-list{
+        height: 280px;
+        width: 420px;
+      }
+    }
+  }
+}
+
+@include screen-xl(tablet-lg, screen-xl){
+  .gpu-container{
+    .gpu-showcase{
+      @include grid-format-2;
+    }
   }
 }

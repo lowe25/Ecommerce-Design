@@ -1,12 +1,27 @@
-@mixin product-landing-container {
-    height: 520px;
+.product-landing-intro {
+  min-height: 90px;
+  padding-top: 10px;
+  background-color: $primary-bg-color;
+  color: $txt-color;
+  h1 {
+    color: $primary-color;
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+    line-height: 1.6;
+    padding: 21px;
+  }
+}
+
+.product-landing-container {
+    min-height: 520px;
     background-color: $primary-bg-color;
     color: $txt-color;
-    padding: 40px;
-  
     .product-landing-showcase {
       @include grid-format-3;
       gap: 20px;
+      padding-bottom: 20px;
   
       .product-landing-list {
         @include product-box2;
@@ -26,19 +41,39 @@
       }
     }
   }
-  
-  @mixin product-landing-intro {
-    @include product-landing-container;
-    height: 90px;
-    padding-top: 10px;
-    h1 {
-      color: $primary-color;
-      font-weight: bold;
-    }
-    p {
-      text-align: center;
-      line-height: 1.6;
-      padding: 21px;
+
+@include mobile-device(mobile-md){
+  .product-landing-container{
+    .product-landing-showcase{
+      @include grid-format-4;
+      .product-landing-list{
+        width: 300px;
+      }
     }
   }
-  
+}
+
+@include mobile-device-lg(mobile-md,tablet-sm){
+  .product-landing-container{
+    .product-landing-showcase{
+      @include grid-format-4;
+    }
+  }
+}
+
+//Tablet
+@include tablet-device(tablet-sm, tablet-md){
+  .product-landing-container{
+    .product-landing-showcase{
+      @include grid-format-4;
+    }
+  }
+}
+
+@include screen-xl(tablet-lg,screen-xl){
+  .product-landing-container{
+    .product-landing-showcase{
+      @include grid-format-2;
+    }
+  }
+}

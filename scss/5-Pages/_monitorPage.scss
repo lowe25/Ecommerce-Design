@@ -1,12 +1,11 @@
 .monitor-container {
-  min-height: 600px;
+  min-height: 470px;
   background-color: black;
   color: $txt-color;
 
   .monitor-list {
     @include grid-format-3;
     gap: 25px;
-    padding: 150px;
 
     .monitor-product {
       @include product-box;
@@ -51,6 +50,7 @@
   }
 }
 
+//Mobile
 @include mobile-device(mobile-md) {
   .monitor-container {
     .monitor-list {
@@ -64,5 +64,31 @@
   }
   .monitor-intro{
     font-size: 16px;
+  }
+}
+
+@include mobile-device-lg(mobile-md, tablet-sm){
+  .monitor-container{
+    .monitor-list{
+      @include grid-row;
+    }
+  }
+}
+
+//Table
+@include tablet-device(tablet-sm,tablet-md){
+  .monitor-container{
+    .monitor-list{
+      @include grid-row;
+    }
+  }
+}
+
+@include screen-lg(tablet-lg,screen-lg){
+  .monitor-container{
+    .monitor-list{
+      @include grid-format-4;
+      padding: 10px;
+    }
   }
 }
