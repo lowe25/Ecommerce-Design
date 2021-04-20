@@ -7,6 +7,10 @@ header {
   color: $txt-color;
   border-bottom: 2px solid black;
 
+  .nav-logo{
+
+    @include links-property2;
+  }
   ul {
     display: flex;
   }
@@ -101,6 +105,10 @@ header ul li:hover .perip {
 }
 
 @media (max-width: 768px) {
+  .nav-logo{
+    margin-top: 10px;
+    margin-left: 12px;
+  }
   .nav-burger {
     display: flex;
   }

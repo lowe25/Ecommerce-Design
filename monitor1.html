@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <a href="index.html" class="nav-links">ASUS TUF Gaming</a>
+        <a href="index.html" class="nav-logo">ASUS TUF Gaming</a>
         <nav class="navbar">
             <a href="#" class="nav-burger">
                 <span class="bar"></span>
@@ -47,7 +47,7 @@
             </li>
         </ul>
     </header>
-    <div class="monitor-store-container">
+    <div class="product-container">
         <div class="product-content">
             <section class="product-img">
                 <img src="./images/Monitors/VG249QR1.png" alt="Asus TUF VG249QR1">
@@ -58,12 +58,6 @@
                     IPS, Overclockable 165Hz(Above 144Hz), 1ms
                     </p>
                     <p>₱ 12,997.00</p>
-                </div>
-                <div class="qty-container">
-                    <p>Quantity:</p>
-                    <input type="button" class="btn-minus" value="-">
-                    <input type="text" class="txt-quantity" id="" value="0">
-                    <input type="button" class="btn-add" value="+">
                 </div>
                 <div class="product-btn">
                     <input type="button" class="btn-primary" value="Add to Cart">
@@ -277,10 +271,14 @@
     </div>
     <!--Container-->
     <footer>
-        <p>Subscribe to get the latest on sales, new release and more..</p>
+        <p>Subscribe to get the latest on sales, new release and more.</p>
         <form action="" class="subscription">
-            <input type="text" class="txt-email" id="" placeholder="Email">
-            <input type="button" class="btn-subs" value="Subscribe">
+            <div class="fields">
+                <input type="text" class="txt-email" id="" placeholder="Email">
+            </div>
+            <div class="fields">
+                <input type="button" class="btn-subs" value="Subscribe">
+            </div>
         </form>
         <p class="payment">Payment Partners</p>
         <div class="payment-partners">
@@ -316,6 +314,10 @@
             </section>
         </div>
     </footer>
+    <div class="rights">
+        <p>Allrights Reserved 2021</p>
+    </div>
 </body>
+<script src="./js/nav.js"></script>
 
 </html>
