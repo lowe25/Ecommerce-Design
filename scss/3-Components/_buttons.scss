@@ -1,8 +1,10 @@
 .btn-subs {
   height: 33px;
   width: 270px;
-  border: none;
+  border: 1px solid $primary-color;
   border-radius: 4px;
+  background-color: $nav-bg;
+  color: $primary-color;
 }
 .btn-search {
   height: 28px;
@@ -13,17 +15,21 @@
 .btn-primary {
   height: 30px;
   width: 130px;
-  border: none;
+  border: 1px solid $primary-color;
   border-radius: 4px;
   cursor: pointer;
+  background-color: $nav-bg;
+  color: $primary-color;
 }
 
 .btn-BrowseProd {
   height: 32px;
   width: 150px;
-  border: none;
+  border: 1px solid $primary-color;
   border-radius: 4px;
   cursor: pointer;
+  background-color: $nav-bg;
+  color: $primary-color;
 }
 .btn-minus,
 .btn-add {

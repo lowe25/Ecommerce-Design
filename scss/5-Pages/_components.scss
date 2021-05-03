@@ -29,6 +29,7 @@
 //Mobile
 @include mobile-device(mobile-md) {
 .components-container{
+  font-size: 16px;
   .products-showcase{
     @include grid-row;
     .mobo,.gpu{

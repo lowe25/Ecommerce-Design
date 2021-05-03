@@ -61,6 +61,7 @@
           .product-content{
            @include grid-format-4;
            gap: 0;
+           font-size: 16px;
           }
           .product-info{
              text-align: center;
@@ -73,6 +74,11 @@
               @include flex-property;
               gap: 15px;
           }
+      }
+      .product-specs{
+        .tbl-specs{
+          font-size: 16px;
+        }
       }
   }
 @include mobile-device-lg(mobile-md, tablet-md){

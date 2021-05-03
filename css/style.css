@@ -20,8 +20,10 @@ body {
 .btn-subs {
   height: 33px;
   width: 270px;
-  border: none;
+  border: 1px solid #f5ba00;
   border-radius: 4px;
+  background-color: #181818;
+  color: #f5ba00;
 }
 
 .btn-search {
@@ -33,17 +35,21 @@ body {
 .btn-primary {
   height: 30px;
   width: 130px;
-  border: none;
+  border: 1px solid #f5ba00;
   border-radius: 4px;
   cursor: pointer;
+  background-color: #181818;
+  color: #f5ba00;
 }
 
 .btn-BrowseProd {
   height: 32px;
   width: 150px;
-  border: none;
+  border: 1px solid #f5ba00;
   border-radius: 4px;
   cursor: pointer;
+  background-color: #181818;
+  color: #f5ba00;
 }
 
 .btn-minus,
@@ -315,63 +321,6 @@ footer .customer-service a:hover {
   }
 }
 
-/*
-.graphics-container {
-  height: 880px;
-  background-color: $primary-bg-color;
-  color: $txt-color;
-}
-
-
-
-.product-specs {
-  font-size: 15px;
-  h1{
-      padding: 15px;
-  }
-.tbl-specs {
-  display: grid;
-  justify-content: center;
-  border-collapse: collapse;
-  width: 100%;
-
-  td,
-  th {
-    border-bottom: 1px solid #f4f4f4;
-    padding: 8px;
-    text-align: left;
-    width: 500px;
-    font-weight: normal;
-  }
-}
-}
-
-.product-content {
-  @include grid-format-3;
-  gap: 100px;
-
-  .product-img {
-    @include img-container4;
-  }
-}
-.product-info {
-  p {
-    padding: 5px 10px;
-  }
-}
-.qty-container {
-  @include flex-property;
-  justify-content: start;
-  gap: 10px;
-  p {
-    padding: 5px 10px;
-  }
-}
-.product-btn {
-  padding: 10px;
-}
-
-*/
 .product-landing-intro {
   min-height: 90px;
   padding-top: 10px;
@@ -554,6 +503,7 @@ footer .customer-service a:hover {
     justify-content: center;
     align-items: center;
     gap: 0;
+    font-size: 16px;
   }
   .product-container .product-info {
     text-align: center;
@@ -567,6 +517,9 @@ footer .customer-service a:hover {
     display: flex;
     justify-content: center;
     gap: 15px;
+  }
+  .product-specs .tbl-specs {
+    font-size: 16px;
   }
 }
 
@@ -591,6 +544,12 @@ footer .customer-service a:hover {
     justify-content: center;
     gap: 15px;
   }
+}
+
+.cart-container {
+  min-height: 700px;
+  background-color: #000000;
+  color: #FDFEFF;
 }
 
 .products1-container {
@@ -977,6 +936,9 @@ h1 {
 }
 
 @media (max-width: 480px) {
+  .components-container {
+    font-size: 16px;
+  }
   .components-container .products-showcase {
     display: grid;
     grid-template-columns: repeat(1, auto);
