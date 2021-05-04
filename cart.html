@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/1a61a63e66.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <a href="index.html" class="nav-logo">ASUS TUF Gaming</a>
@@ -47,7 +49,34 @@
         </ul>
     </header>
     <div class="cart-container">
-
+        <div class="tbl">
+            <table>
+                <tr>
+                    <td><img src="./images/Introduction/gpu.png"></td>
+                    <td>ASUS TUF Gaming GeForce RTX™ 3060 OC Edition 12GB GDDR6</td>
+                    <td>
+                        <input type="number" class="qty-prod" id="quantity" value="0" onkeydown="return false"
+                            name="quantity" min="1" max="10">
+                    </td>
+                    <td>₱ 40,0000</td>
+                </tr>
+            </table>
+            <div class="price-div">
+                <h1>Order Summary</h1>
+                <label>
+                    <p>Subtotal:</p>
+                </label>
+                <label>
+                    <p>Shipping Fee:</p>
+                </label>
+                <label>
+                    <p>Total:</p>
+                </label>
+                <label class="btn">
+                    <input type="submit" class="btn-checkout" value="Proceed To Checkout">
+                </label>
+            </div>
+        </div>
     </div>
     <footer>
         <p>Subscribe to get the latest on sales, new release and more.</p>
@@ -96,5 +125,6 @@
     <div class="rights">
         <p>Allrights Reserved 2021</p>
     </div>
-    </body>
-    </html>
+</body>
+
+</html>

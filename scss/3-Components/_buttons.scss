@@ -23,13 +23,15 @@
 }
 
 .btn-BrowseProd {
-  height: 32px;
-  width: 150px;
-  border: 1px solid $primary-color;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: $nav-bg;
-  color: $primary-color;
+@extend .btn-primary;
+height: 32px;
+width: 150px;
+}
+
+.btn-checkout{
+  @extend .btn-BrowseProd;
+  color: white;
+height: 45px;
 }
 .btn-minus,
 .btn-add {

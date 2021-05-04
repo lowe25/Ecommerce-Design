@@ -32,7 +32,7 @@ body {
   border: none;
 }
 
-.btn-primary {
+.btn-primary, .btn-BrowseProd, .btn-checkout {
   height: 30px;
   width: 130px;
   border: 1px solid #f5ba00;
@@ -42,14 +42,14 @@ body {
   color: #f5ba00;
 }
 
-.btn-BrowseProd {
+.btn-BrowseProd, .btn-checkout {
   height: 32px;
   width: 150px;
-  border: 1px solid #f5ba00;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: #181818;
-  color: #f5ba00;
+}
+
+.btn-checkout {
+  color: white;
+  height: 45px;
 }
 
 .btn-minus,
@@ -547,9 +547,52 @@ footer .customer-service a:hover {
 }
 
 .cart-container {
-  min-height: 700px;
+  min-height: 500px;
   background-color: #000000;
   color: #FDFEFF;
+}
+
+.tbl {
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+td, th {
+  border: none;
+  text-align: left;
+  padding: 12px;
+}
+
+td, img {
+  height: 150px;
+}
+
+.price-div {
+  color: white;
+  min-height: 170px;
+  padding: 20px;
+}
+
+.price-div label {
+  padding: 15px;
+}
+
+.price-div .btn {
+  display: grid;
+  justify-content: center;
+}
+
+.qty-prod {
+  height: 25px;
+  width: 60px;
+  text-align: center;
 }
 
 .products1-container {

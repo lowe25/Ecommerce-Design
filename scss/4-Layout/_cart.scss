@@ -1,5 +1,47 @@
 .cart-container{
-    min-height: 700px;
+    min-height: 500px;
     background-color: $primary-bg-color;
     color: $txt-color;
 }
+.tbl{
+    display: grid;
+    justify-content: center;
+    gap:15px;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    max-width: 100%;
+  }
+  
+  td, th {
+    border: none;
+    text-align: left;
+    padding: 12px;
+  }
+  td, img{
+    height: 150px;
+  }
+  
+  .price-div{
+    color: white;
+    min-height: 170px;
+    padding: 20px;
+
+    label{
+        padding: 15px;
+    }
+    .btn{
+        @include grid-property;
+    }
+  }
+
+  .qty-prod{
+      height: 25px;
+      width: 60px;
+      text-align: center;
+  }
+  
+  
+  
+  
