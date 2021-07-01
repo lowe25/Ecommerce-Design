@@ -546,55 +546,6 @@ footer .customer-service a:hover {
   }
 }
 
-.cart-container {
-  min-height: 500px;
-  background-color: #000000;
-  color: #FDFEFF;
-}
-
-.tbl {
-  display: grid;
-  justify-content: center;
-  gap: 15px;
-}
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  max-width: 100%;
-}
-
-td, th {
-  border: none;
-  text-align: left;
-  padding: 12px;
-}
-
-td, img {
-  height: 150px;
-}
-
-.price-div {
-  color: white;
-  min-height: 170px;
-  padding: 20px;
-}
-
-.price-div label {
-  padding: 15px;
-}
-
-.price-div .btn {
-  display: grid;
-  justify-content: center;
-}
-
-.qty-prod {
-  height: 25px;
-  width: 60px;
-  text-align: center;
-}
-
 .products1-container {
   min-height: 700px;
   background-color: black;
