@@ -22,6 +22,18 @@
   color: $primary-color;
 }
 
+//Columns And Row
+.col,.row{
+  height: 30px;
+  width: 50px;
+}
+.product-layout{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
 .btn-BrowseProd {
 @extend .btn-primary;
 height: 32px;

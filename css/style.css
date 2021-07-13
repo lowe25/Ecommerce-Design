@@ -42,6 +42,18 @@ body {
   color: #f5ba00;
 }
 
+.col, .row {
+  height: 30px;
+  width: 50px;
+}
+
+.product-layout {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
 .btn-BrowseProd, .btn-checkout {
   height: 32px;
   width: 150px;
@@ -1059,7 +1071,7 @@ h1 {
   color: #FDFEFF;
 }
 
-.gpu-container .gpu-showcase, .gpu-intro .gpu-showcase {
+.gpu-container .product-landing-showcase, .gpu-intro .product-landing-showcase {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
@@ -1068,29 +1080,29 @@ h1 {
   padding: 20px;
 }
 
-.gpu-container .gpu-showcase .gpu-list, .gpu-intro .gpu-showcase .gpu-list {
+.gpu-container .product-landing-showcase .gpu-list, .gpu-intro .product-landing-showcase .gpu-list {
   height: 250px;
   width: 450px;
   border: 2px solid white;
 }
 
-.gpu-container .gpu-showcase .gpu-img, .gpu-intro .gpu-showcase .gpu-img {
+.gpu-container .product-landing-showcase .gpu-img, .gpu-intro .product-landing-showcase .gpu-img {
   display: grid;
   justify-content: center;
 }
 
-.gpu-container .gpu-showcase .gpu-img img, .gpu-intro .gpu-showcase .gpu-img img {
+.gpu-container .product-landing-showcase .gpu-img img, .gpu-intro .product-landing-showcase .gpu-img img {
   position: relative;
   height: 180px;
   top: 1%;
 }
 
-.gpu-container .gpu-showcase .gpu-specs, .gpu-intro .gpu-showcase .gpu-specs {
+.gpu-container .product-landing-showcase .gpu-specs, .gpu-intro .product-landing-showcase .gpu-specs {
   font-size: 14px;
   text-align: center;
 }
 
-.gpu-container .gpu-showcase .gpu-btn, .gpu-intro .gpu-showcase .gpu-btn {
+.gpu-container .product-landing-showcase .gpu-btn, .gpu-intro .product-landing-showcase .gpu-btn {
   display: flex;
   justify-content: center;
   padding-top: 10px;
@@ -1168,7 +1180,7 @@ h1 {
   padding: 20px;
 }
 
-.motherboard-container .motherboard-showcase, .motherboard-intro .motherboard-showcase {
+.motherboard-container .product-landing-showcase, .motherboard-intro .product-landing-showcase {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
@@ -1176,29 +1188,29 @@ h1 {
   gap: 20px;
 }
 
-.motherboard-container .motherboard-showcase .motherboard-list, .motherboard-intro .motherboard-showcase .motherboard-list {
+.motherboard-container .product-landing-showcase .motherboard-list, .motherboard-intro .product-landing-showcase .motherboard-list {
   height: 250px;
   width: 450px;
   border: 2px solid white;
 }
 
-.motherboard-container .motherboard-showcase .motherboard-list .motherboard-img, .motherboard-intro .motherboard-showcase .motherboard-list .motherboard-img {
+.motherboard-container .product-landing-showcase .motherboard-list .motherboard-img, .motherboard-intro .product-landing-showcase .motherboard-list .motherboard-img {
   display: grid;
   justify-content: center;
 }
 
-.motherboard-container .motherboard-showcase .motherboard-list .motherboard-img img, .motherboard-intro .motherboard-showcase .motherboard-list .motherboard-img img {
+.motherboard-container .product-landing-showcase .motherboard-list .motherboard-img img, .motherboard-intro .product-landing-showcase .motherboard-list .motherboard-img img {
   position: relative;
   height: 180px;
   top: 1%;
 }
 
-.motherboard-container .motherboard-showcase .motherboard-list .motherboard-specs, .motherboard-intro .motherboard-showcase .motherboard-list .motherboard-specs {
+.motherboard-container .product-landing-showcase .motherboard-list .motherboard-specs, .motherboard-intro .product-landing-showcase .motherboard-list .motherboard-specs {
   text-align: center;
   font-size: 14px;
 }
 
-.motherboard-container .motherboard-showcase .motherboard-list .motherboard-btn, .motherboard-intro .motherboard-showcase .motherboard-list .motherboard-btn {
+.motherboard-container .product-landing-showcase .motherboard-list .motherboard-btn, .motherboard-intro .product-landing-showcase .motherboard-list .motherboard-btn {
   display: flex;
   justify-content: center;
   padding-top: 10px;

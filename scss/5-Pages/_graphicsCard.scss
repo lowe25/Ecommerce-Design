@@ -3,9 +3,8 @@
   min-height: 800px;
   background-color: $primary-bg-color;
   color: $txt-color;
-
-
-  .gpu-showcase {
+  
+  .product-landing-showcase {
     @include grid-format-3;
     gap: 20px;
     padding: 20px;
