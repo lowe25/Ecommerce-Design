@@ -62,4 +62,17 @@ height: 45px;
   .btn-subs {
     width: 100%;
   }
+  .product-layout{
+    display: none;
+  }
+}
+@include mobile-device-lg(mobile-lg, tablet-sm){
+  .product-layout{
+    display: none;
+  }
+}
+@include tablet-device(tablet-sm,tablet-md){
+  .product-layout{
+    display: none;
+  }
 }

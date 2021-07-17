@@ -43,7 +43,7 @@
 //Mobile
 @include mobile-device(mobile-md) {
   .motherboard-container {
-    .motherboard-showcase {
+    .product-landing-showcase {
       @include grid-format-4;
       .motherboard-list{
         height: 280px;
@@ -58,7 +58,7 @@
 
 @include mobile-device-lg(mobile-lg, tablet-sm){
   .motherboard-container{
-    .motherboard-showcase{
+    .product-landing-showcase{
       @include grid-format-4;
     }
   }
@@ -67,7 +67,7 @@
 //Tablet
 @include tablet-device(tablet-sm,tablet-md){
   .motherboard-container{
-    .motherboard-showcase{
+    .product-landing-showcase{
       @include grid-format-4;
     }
   }
@@ -76,7 +76,7 @@
 //Screen Large
 @include screen-lg(tablet-lg, screen-xl){
   .motherboard-container{
-    .motherboard-showcase{
+    .product-landing-showcase{
       @include grid-format-2;
     }
   }

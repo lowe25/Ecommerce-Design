@@ -14,12 +14,12 @@
     max-width: 100%;
   }
   
-  td, th {
+  .prod-img,.prod-name,.prod-quantity {
     border: none;
     text-align: left;
     padding: 12px;
   }
-  td, img{
+  .prod-img,.prod-name,.prod-quantity, img{
     height: 150px;
   }
   

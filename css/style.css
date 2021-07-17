@@ -88,6 +88,21 @@ body {
   .btn-subs {
     width: 100%;
   }
+  .product-layout {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .product-layout {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-layout {
+    display: none;
+  }
 }
 
 .txt-email {
@@ -556,6 +571,55 @@ footer .customer-service a:hover {
     justify-content: center;
     gap: 15px;
   }
+}
+
+.cart-container {
+  min-height: 500px;
+  background-color: #000000;
+  color: #FDFEFF;
+}
+
+.tbl {
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+.prod-img, .prod-name, .prod-quantity {
+  border: none;
+  text-align: left;
+  padding: 12px;
+}
+
+.prod-img, .prod-name, .prod-quantity, img {
+  height: 150px;
+}
+
+.price-div {
+  color: white;
+  min-height: 170px;
+  padding: 20px;
+}
+
+.price-div label {
+  padding: 15px;
+}
+
+.price-div .btn {
+  display: grid;
+  justify-content: center;
+}
+
+.qty-prod {
+  height: 25px;
+  width: 60px;
+  text-align: center;
 }
 
 .products1-container {
@@ -1126,46 +1190,46 @@ h1 {
 }
 
 @media (max-width: 480px) {
-  .gpu-container .gpu-showcase, .gpu-intro .gpu-showcase {
+  .gpu-container .product-landing-showcase, .gpu-intro .product-landing-showcase {
     display: grid;
     grid-template-columns: repeat(1, auto);
     justify-content: center;
     align-items: center;
   }
-  .gpu-container .gpu-showcase .gpu-list, .gpu-intro .gpu-showcase .gpu-list {
+  .gpu-container .product-landing-showcase .gpu-list, .gpu-intro .product-landing-showcase .gpu-list {
     height: 280px;
     width: 300px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .gpu-container .gpu-showcase, .gpu-intro .gpu-showcase {
+  .gpu-container .product-landing-showcase, .gpu-intro .product-landing-showcase {
     display: grid;
     grid-template-columns: repeat(1, auto);
     justify-content: center;
     align-items: center;
   }
-  .gpu-container .gpu-showcase .gpu-list, .gpu-intro .gpu-showcase .gpu-list {
+  .gpu-container .product-landing-showcase .gpu-list, .gpu-intro .product-landing-showcase .gpu-list {
     height: 280px;
     width: 400px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .gpu-container .gpu-showcase, .gpu-intro .gpu-showcase {
+  .gpu-container .product-landing-showcase, .gpu-intro .product-landing-showcase {
     display: grid;
     grid-template-columns: repeat(1, auto);
     justify-content: center;
     align-items: center;
   }
-  .gpu-container .gpu-showcase .gpu-list, .gpu-intro .gpu-showcase .gpu-list {
+  .gpu-container .product-landing-showcase .gpu-list, .gpu-intro .product-landing-showcase .gpu-list {
     height: 280px;
     width: 420px;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1418px) {
-  .gpu-container .gpu-showcase, .gpu-intro .gpu-showcase {
+  .gpu-container .product-landing-showcase, .gpu-intro .product-landing-showcase {
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: center;
@@ -1232,23 +1296,23 @@ h1 {
 }
 
 @media (max-width: 480px) {
-  .motherboard-container .motherboard-showcase, .motherboard-intro .motherboard-showcase {
+  .motherboard-container .product-landing-showcase, .motherboard-intro .product-landing-showcase {
     display: grid;
     grid-template-columns: repeat(1, auto);
     justify-content: center;
     align-items: center;
   }
-  .motherboard-container .motherboard-showcase .motherboard-list, .motherboard-intro .motherboard-showcase .motherboard-list {
+  .motherboard-container .product-landing-showcase .motherboard-list, .motherboard-intro .product-landing-showcase .motherboard-list {
     height: 280px;
     width: 285px;
   }
-  .motherboard-container .motherboard-showcase .motherboard-btn, .motherboard-intro .motherboard-showcase .motherboard-btn {
+  .motherboard-container .product-landing-showcase .motherboard-btn, .motherboard-intro .product-landing-showcase .motherboard-btn {
     padding-top: 55px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .motherboard-container .motherboard-showcase, .motherboard-intro .motherboard-showcase {
+  .motherboard-container .product-landing-showcase, .motherboard-intro .product-landing-showcase {
     display: grid;
     grid-template-columns: repeat(1, auto);
     justify-content: center;
@@ -1257,7 +1321,7 @@ h1 {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .motherboard-container .motherboard-showcase, .motherboard-intro .motherboard-showcase {
+  .motherboard-container .product-landing-showcase, .motherboard-intro .product-landing-showcase {
     display: grid;
     grid-template-columns: repeat(1, auto);
     justify-content: center;
@@ -1266,7 +1330,7 @@ h1 {
 }
 
 @media (min-width: 1025px) and (max-width: 1418px) {
-  .motherboard-container .motherboard-showcase, .motherboard-intro .motherboard-showcase {
+  .motherboard-container .product-landing-showcase, .motherboard-intro .product-landing-showcase {
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: center;
