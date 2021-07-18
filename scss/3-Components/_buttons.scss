@@ -34,6 +34,13 @@
   padding: 10px;
 }
 
+//Checkout Form
+.btn-cart,.btn-shipping{
+  height: 32px;
+  width: 130px;
+  cursor: pointer;
+}
+
 .btn-BrowseProd {
 @extend .btn-primary;
 height: 32px;
@@ -62,10 +69,12 @@ height: 45px;
   .btn-subs {
     width: 100%;
   }
+  //For Col and Row Buttons
   .product-layout{
     display: none;
   }
 }
+//For Col and Row Buttons
 @include mobile-device-lg(mobile-lg, tablet-sm){
   .product-layout{
     display: none;

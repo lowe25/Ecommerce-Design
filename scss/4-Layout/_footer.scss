@@ -57,16 +57,16 @@ footer {
 
 @include mobile-device(mobile-md) {
   footer {
-      //16px
-      font-size: 1rem;
+    //16px
+    font-size: 1rem;
     height: 520px;
     .payment-partners {
       display: grid;
       grid-template-columns: repeat(2, auto);
     }
-    .customer-service{
-        display: grid;
-        grid-template-columns: repeat(1, auto);
+    .customer-service {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
     }
   }
 }

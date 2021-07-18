@@ -1,5 +1,5 @@
 .cart-container{
-    min-height: 500px;
+    min-height: 471px;
     background-color: $primary-bg-color;
     color: $txt-color;
 }
@@ -8,8 +8,7 @@
     justify-content: center;
     gap:15px;
   }
-  table {
-    font-family: arial, sans-serif;
+  .cart-tbl {
     border-collapse: collapse;
     max-width: 100%;
   }
@@ -25,8 +24,7 @@
   
   .price-div{
     color: white;
-    min-height: 170px;
-    padding: 20px;
+    min-height: 120px;
 
     label{
         padding: 15px;

@@ -2,14 +2,15 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5px;
   background-color: $nav-bg;
   color: $txt-color;
   border-bottom: 2px solid black;
 
   .nav-logo{
-
     @include links-property2;
+    .logo-pic{
+      height: 50px;
+    }
   }
   ul {
     display: flex;
@@ -89,7 +90,7 @@ header ul li:hover .perip {
 */
 .nav-burger {
   position: absolute;
-  top: 0.75rem;
+  top: 1.5rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -108,9 +109,14 @@ header ul li:hover .perip {
   .nav-logo{
     margin-top: 10px;
     margin-left: 12px;
+    .logo-pic{
+      height: 10px;
+      position: relative;
+      right: 17px;
+    }
   }
   .nav-burger {
-    display: flex;
+    display: flex;  
   }
 
   .nav-list {

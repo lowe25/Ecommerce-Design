@@ -1,23 +1,42 @@
-.txt-email{
-    height: 31px;
-    width: 270px;
-    border-radius:3px;
-    border:none;
+//Checkout
+.txt-email1,
+.txt-firstName,
+.txt-lastName,
+.txt-address,
+.txt-apartment,
+.txt-postal,
+.txt-city,
+.txt-phoneNumber {
+  height: 32px;
+  width: 450px;
+  border-radius: 3px;
+  border: none;
 }
- .txt-search{
-     height: 28px;
-     width: 300px;
-     border: none;
- }
 
- .txt-quantity{
-     height: 27px;
-     width: 65px;
- }
- 
- @include mobile-device(mobile-md) {
-    .txt-email {
-      width: 100%;
-    }
+//Footer
+.txt-email {
+  height: 31px;
+  width: 270px;
+  border-radius: 3px;
+  border: none;
+}
+.txt-quantity {
+  height: 27px;
+  width: 65px;
+}
+
+@include mobile-device(mobile-md) {
+  .txt-email {
+    width: 100%;
   }
-  
+  .txt-email1,
+  .txt-firstName,
+  .txt-lastName,
+  .txt-address,
+  .txt-apartment,
+  .txt-postal,
+  .txt-city,
+  .txt-phoneNumber {
+    width: 100%;
+  }
+}

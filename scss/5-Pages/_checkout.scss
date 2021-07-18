@@ -1,0 +1,32 @@
+//Checkout Form//
+.checkout-container {
+  @include grid-format-2;
+  background-color: $primary-bg-color;
+}
+.checkout-forms,
+.checkout-product {
+  height: 700px;
+  width: 800px;
+  color: $txt-color;
+}
+.checkout-forms {
+    display: grid;
+    align-items: flex-start;
+    padding-top: 40px;
+  label {
+    display: block;
+    padding: 12px;
+    text-align: center;
+  }
+  .btn{
+      display: flex;
+      justify-content: space-evenly;
+  }
+}
+
+//Checkout Product//
+.checkout-product{
+  label{
+    padding: 10px;
+  }
+}

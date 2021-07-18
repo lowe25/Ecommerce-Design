@@ -5,72 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The ASUS TUF Gaming GeForce® GTX 1660 6GB GDDR5
-    </title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/1a61a63e66.js" crossorigin="anonymous"></script>
+    <title>Checkout</title>
 </head>
 
 <body>
-    <header>
-        <a href="index.html" class="nav-logo"><img src="./images/Introduction/logo.jpg" class="logo-pic"></a>
-        <nav class="navbar">
-            <a href="#" class="nav-burger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="nav-list">
-                <ul>
-                    <li><a href="components.html" class="nav-links">Components</a>
-                        <!---   <ul class="">
-                            <li><a href="">Graphics Card</a></li>
-                            <li><a href="">Mothedsrboard</a></li>
-                        </ul>-->
-                    </li>
-                    <li><a href="periperals.html" class="nav-links">Periperals</a>
-                        <!--<ul class="">
-                            <li><a href="">Keyboard</a></li>
-                            <li><a href="">Mouse</a></li>
-                            <li><a href="">Headset</a></li>
-                        </ul>-->
-                    </li>
-                    <li><a href="laptop.html" class="nav-links">Laptop</a></li>
-                    <li><a href="monitor.html" class="nav-links">Monitor</a></li>
-                </ul>
-            </div>
-        </nav>
-        <ul>
-            <li> <a href="cart.html" class="nav-links">
-                    <p>Cart<i class="fas fa-shopping-cart"></i></p>
-                </a>
-            </li>
-        </ul>
-    </header>
-    <div class="cart-container">
-        <div class="tbl">
-            <table class="cart-tbl">
-                <tr>
-                    <td class="prod-img"><img src="./images/Introduction/gpu.png"></td>
-                    <td class="prod-name">ASUS TUF Gaming GeForce RTX™ 3060 OC Edition 12GB GDDR6</td>
-                    <td class="prod-quantity">
-                        <input type="number" class="qty-prod" id="quantity" value="0" onkeydown="return false"
-                            name="quantity" min="1" max="10">
-                    </td>
-                    <td class="prod-price">₱ 40,0000</td>
-                </tr>
-            </table>
-            <div class="price-div">
-              <!--  <h1>Order Summary</h1>
+    <div class="checkout-container">
+        <div class="checkout-forms">
+            <form action="" class="txt-fields">
                 <label>
-                    <p>Subtotal:</p>
-                </label>
-                <label>
-                    <p>Shipping Fee:</p>
-                </label>
-                <label>
-                    <p>Total:</p>
-                        <label>
                     <p>Contact Information:</p>
                     <input type="text" placeholder="Email" class="txt-email1">
                 </label>
@@ -102,18 +46,47 @@
                 <label>
                     <input type="text" placeholder="Phone Number" class="txt-phoneNumber">
                 </label>
-                </label>-->
-                <label class="btn">
-                    <a href="checkout.html"><input type="submit" class="btn-checkout" value="Proceed To Checkout"></a>
+                <div class="btn">
+                    <a href="cart.html"><input type="button" class="btn-cart" value="Return to Cart"></a>
+                    <a href="payment.html"><input type="button" class="btn-shipping" value="Continue to Payment"></a>
+                </div>
+            </form>
+        </div>
+        <!--Checkout Forms-->
+        <div class="checkout-product">
+            <table class="checkout-tbl">
+                <tr>
+                    <td class="checkout-img"><img src="./images/Introduction/gpu.png"></td>
+                    <td class="checkout-name">ASUS TUF Gaming GeForce RTX™ 3060 OC Edition 12GB GDDR6</td>
+                    <td class="checkout-price">₱ 40,0000</td>
+                </tr>
+            </table>
+            <hr>
+            <div class="checkout-price">
+                <label for="">
+                    <h2>Subtotal:</h2>
+                    <p>₱ 40,0000</p>
+                </label>
+
+                <label for="">
+                    <h2>Shipping:</h2>
+                    <p>₱ 130.00</p>
+                </label>
+                <hr>
+                <label for="">
+                    <h2>Total:</h2>
+                    <p>₱ 40,130</p>
                 </label>
             </div>
         </div>
+        <!--Checkout Product-->
     </div>
+    <!--Container-->
     <footer>
         <p>Subscribe to get the latest on sales, new release and more.</p>
         <form action="" class="subscription">
             <div class="fields">
-                <input type="text" class="txt-email" placeholder="Email">
+                <input type="text" class="txt-email" id="" placeholder="Email">
             </div>
             <div class="fields">
                 <input type="button" class="btn-subs" value="Subscribe">
@@ -157,5 +130,5 @@
         <p>Allrights Reserved 2021</p>
     </div>
 </body>
-<script src="./js/nav.js"></script>
+
 </html>
