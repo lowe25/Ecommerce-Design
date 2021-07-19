@@ -1,4 +1,122 @@
-.payment-container{
-    height: 550px;
-    background-color: $primary-bg-color;
+.payment-container {
+  padding: 10px;
+  min-height: 540px;
+  background-color: $primary-bg-color;
+  color: $txt-color;
+  text-align: center;
+
+  .cards {
+    display: grid;
+    position: relative;
+    top: 10%;
+    grid-template-columns: repeat(2, auto);
+    justify-content:center;
+    padding-top: 15px;
+    gap: 10px;
+    .card1,
+    .card2 {
+        height: 100px;
+        width: 400px;
+        border: 2px solid white;
+        text-align: center;
+        .card-img{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            .bank-img{
+                height: 80px;
+            }
+            .american-exp{
+                padding-top: 15px;
+                height: 55px;
+            }
+        }
+    }
+  }
+  .card-info{
+      padding: 15px;
+    position: relative;
+    top: 15%;
+    text-align: center;
+      .card-info1{
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        padding: 15px;
+      }
+      .card-btn{
+          display: flex;
+          justify-content:space-evenly;
+      }
+  }
+}
+
+/*Media Query*/
+/*Mobile*/
+@include mobile-device(mobile-md){
+    .payment-container{
+        .cards{
+            grid-template-columns:repeat(1,auto);
+            .card1,
+            .card2{
+                width: 290px;
+            }
+        }
+    }
+    .card-info{
+        padding: 15px;
+        .card-info1{
+            flex-direction: column;
+        }
+        .card-btn{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+    }
+}
+
+/*Tablet*/
+@include mobile-device-lg(mobile-md, tablet-sm){
+    .payment-container{
+        .cards{
+            grid-template-columns:repeat(1,auto);
+            .card1,
+            .card2{
+                width: 420px;
+            }
+        }
+    }
+    .card-info{
+        .card-info1{
+            justify-content: center;
+        }
+        .card-btn{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+    }
+}
+
+@include tablet-device(tablet-sm, tablet-md){
+    .payment-container{
+        .cards{
+            grid-template-columns:repeat(1,auto);
+            .card1,
+            .card2{
+                width: 500px;
+            }
+        }
+    }
+    .card-info{
+        .card-info1{
+            justify-content: center;
+        }
+        .card-btn{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+    }
 }

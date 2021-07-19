@@ -39,7 +39,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   background-color: #181818;
-  color: #f5ba00;
+  color: #FDFEFF;
 }
 
 .col, .row {
@@ -125,6 +125,14 @@ body {
   border: none;
 }
 
+.cardName,
+.cardNumber,
+.date,
+.cvv {
+  height: 32px;
+  width: 300px;
+}
+
 .txt-email {
   height: 31px;
   width: 270px;
@@ -139,6 +147,12 @@ body {
 
 @media (max-width: 480px) {
   .txt-email {
+    width: 100%;
+  }
+  .cardName,
+  .cardNumber,
+  .date,
+  .cvv {
     width: 100%;
   }
   .txt-email1,
@@ -1405,7 +1419,125 @@ h1 {
 }
 
 .payment-container {
-  height: 550px;
+  padding: 10px;
+  min-height: 540px;
   background-color: #000000;
+  color: #FDFEFF;
+  text-align: center;
+}
+
+.payment-container .cards {
+  display: grid;
+  position: relative;
+  top: 10%;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  padding-top: 15px;
+  gap: 10px;
+}
+
+.payment-container .cards .card1,
+.payment-container .cards .card2 {
+  height: 100px;
+  width: 400px;
+  border: 2px solid white;
+  text-align: center;
+}
+
+.payment-container .cards .card1 .card-img,
+.payment-container .cards .card2 .card-img {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.payment-container .cards .card1 .card-img .bank-img,
+.payment-container .cards .card2 .card-img .bank-img {
+  height: 80px;
+}
+
+.payment-container .cards .card1 .card-img .american-exp,
+.payment-container .cards .card2 .card-img .american-exp {
+  padding-top: 15px;
+  height: 55px;
+}
+
+.payment-container .card-info {
+  padding: 15px;
+  position: relative;
+  top: 15%;
+  text-align: center;
+}
+
+.payment-container .card-info .card-info1 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+.payment-container .card-info .card-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*Media Query*/
+/*Mobile*/
+@media (max-width: 480px) {
+  .payment-container .cards {
+    grid-template-columns: repeat(1, auto);
+  }
+  .payment-container .cards .card1,
+  .payment-container .cards .card2 {
+    width: 290px;
+  }
+  .card-info {
+    padding: 15px;
+  }
+  .card-info .card-info1 {
+    flex-direction: column;
+  }
+  .card-info .card-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/*Tablet*/
+@media (min-width: 480px) and (max-width: 768px) {
+  .payment-container .cards {
+    grid-template-columns: repeat(1, auto);
+  }
+  .payment-container .cards .card1,
+  .payment-container .cards .card2 {
+    width: 420px;
+  }
+  .card-info .card-info1 {
+    justify-content: center;
+  }
+  .card-info .card-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .payment-container .cards {
+    grid-template-columns: repeat(1, auto);
+  }
+  .payment-container .cards .card1,
+  .payment-container .cards .card2 {
+    width: 500px;
+  }
+  .card-info .card-info1 {
+    justify-content: center;
+  }
+  .card-info .card-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

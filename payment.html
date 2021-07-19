@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,42 @@
     <script src="https://kit.fontawesome.com/1a61a63e66.js" crossorigin="anonymous"></script>
     <title>Payment</title>
 </head>
+
 <body>
     <div class="payment-container">
-
-    </div><!--Payment Container-->
+        <p>Payment Options</p>
+        <div class="cards">
+            <div class="card1">
+              <div class="card-img">
+                <img src="./images/Banks/visa.png" class="bank-img">
+                <img src="./images/Banks/mastercard.png" class="bank-img">
+                <img src="./images/Banks/american-express.png" class="american-exp">
+              </div>
+            </div>
+            <div class="card2">
+                <div class="card-img">
+                    <img src="./images/Banks/paypal.png" class="bank-img">
+                  </div>
+            </div>
+        </div>
+        <div class="card-info">
+            <p>Card Information:</p>
+            <div class="card-info1">
+                <input type="text" placeholder="Card Holdername" class="cardName">
+                <input type="text" placeholder="CardNumber" class="cardNumber">
+            </div>
+            <div class="card-info1">
+                <input placeholder="MM/YY" type="date" class="date">
+                <input type="text" placeholder="CVV/CVC" class="cvv">
+            </div>
+            <div class="card-btn">
+                <a href="checkout.html"><input type="button" class="btn-primary" value="Back to Checkout"></a>
+                <a href="#"><input type="button" class="btn-primary" value="Confirm Payment"></a>
+            </div>
+        </div>
+        <!--Card Info-->
+    </div>
+    <!--Payment Container-->
     <footer>
         <p>Subscribe to get the latest on sales, new release and more.</p>
         <form action="" class="subscription">
@@ -60,4 +93,5 @@
         <p>Allrights Reserved 2021</p>
     </div>
 </body>
+
 </html>

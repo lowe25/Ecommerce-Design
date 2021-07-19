@@ -1,4 +1,4 @@
-//Checkout
+//Checkout Page
 .txt-email1,
 .txt-firstName,
 .txt-lastName,
@@ -12,7 +12,14 @@
   border-radius: 3px;
   border: none;
 }
-
+//Payment Page
+.cardName,
+.cardNumber,
+.date,
+.cvv{
+  height: 32px;
+  width: 300px;
+}
 //Footer
 .txt-email {
   height: 31px;
@@ -29,6 +36,15 @@
   .txt-email {
     width: 100%;
   }
+  //Payment Page
+  .cardName,
+  .cardNumber,
+  .date,
+  .cvv{
+    width: 100%;
+  }
+  
+  //Checkout Page
   .txt-email1,
   .txt-firstName,
   .txt-lastName,
