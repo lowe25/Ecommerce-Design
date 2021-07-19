@@ -1,32 +1,44 @@
-//Checkout Form//
-.checkout-container {
-  @include grid-format-2;
+.checkout-container{
+  min-height: 550px;
   background-color: $primary-bg-color;
 }
-.checkout-forms,
-.checkout-product {
-  height: 700px;
-  width: 800px;
-  color: $txt-color;
+.checkout-parent{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
 }
-.checkout-forms {
-    display: grid;
-    align-items: flex-start;
-    padding-top: 40px;
-  label {
-    display: block;
-    padding: 12px;
-    text-align: center;
+.checkout-forms{
+  padding: 15px;
+  .checkout-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0 10px 0;
   }
   .btn{
-      display: flex;
-      justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.checkout-product{
+  .checkout-tbl{
+    display: flex;
+    flex-direction: column;
+  }
+  color: $txt-color;
+  .checkout-price{
+    label{
+      padding: 15px;
+    }
   }
 }
 
-//Checkout Product//
-.checkout-product{
-  label{
-    padding: 10px;
+@include mobile-device(mobile-md){
+  .checkout-parent{
+    padding-bottom: 20px;
+    flex-direction: column;
+    text-align: center;
   }
 }

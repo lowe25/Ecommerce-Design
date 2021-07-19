@@ -12,40 +12,30 @@
 
 <body>
     <div class="checkout-container">
+        <div class="checkout-parent">
         <div class="checkout-forms">
             <form action="" class="txt-fields">
-                <label>
-                    <p>Contact Information:</p>
-                    <input type="text" placeholder="Email" class="txt-email1">
-                </label>
-                <label>
-                    <p>Shipping Address:</p>
-                    <input type="text" placeholder="First Name" class="txt-firstName">
-                </label>
+              <div class="checkout-txt">
+                <input type="text" placeholder="Email" class="txt-email1">
+              </div>
+              <div class="checkout-txt">
+                <input type="text" placeholder="First Name" class="txt-firstName">
+                <input type="text" placeholder="Last Name" class="txt-lastName">
+              </div>
 
-                <label>
-                    <input type="text" placeholder="Last Name" class="txt-lastName">
-                </label>
+              <div class="checkout-txt">
+                <input type="text" placeholder="Address" class="txt-address">
+                <input type="text" placeholder="Apartment, Suite etc.(Optional)" class="txt-apartment">
+              </div>
 
-                <label>
-                    <input type="text" placeholder="Address" class="txt-address">
-                </label>
+              <div class="checkout-txt">
+                <input type="text" placeholder="Postal Code" class="txt-postal">
+                <input type="text" placeholder="City" class="txt-city">
+              </div>
 
-                <label>
-                    <input type="text" placeholder="Apartment, Suite etc.(Optional)" class="txt-apartment">
-                </label>
-
-                <label>
-                    <input type="text" placeholder="Postal Code" class="txt-postal">
-                </label>
-
-                <label>
-                    <input type="text" placeholder="City" class="txt-city">
-                </label>
-
-                <label>
-                    <input type="text" placeholder="Phone Number" class="txt-phoneNumber">
-                </label>
+              <div class="checkout-txt">
+                <input type="text" placeholder="Phone Number" class="txt-phoneNumber">
+              </div>
                 <div class="btn">
                     <a href="cart.html"><input type="button" class="btn-primary" value="Return to Cart"></a>
                     <a href="payment.html"><input type="button" class="btn-primary" value="Continue to Payment"></a>
@@ -80,6 +70,8 @@
             </div>
         </div>
         <!--Checkout Product-->
+        </div>
+        <!--Checkout Parent-->
     </div>
     <!--Container-->
     <footer>

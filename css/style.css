@@ -1383,39 +1383,53 @@ h1 {
 }
 
 .checkout-container {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  justify-content: center;
-  align-items: center;
+  min-height: 550px;
   background-color: #000000;
 }
 
-.checkout-forms,
-.checkout-product {
-  height: 700px;
-  width: 800px;
-  color: #FDFEFF;
+.checkout-parent {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
 }
 
 .checkout-forms {
-  display: grid;
-  align-items: flex-start;
-  padding-top: 40px;
+  padding: 15px;
 }
 
-.checkout-forms label {
-  display: block;
-  padding: 12px;
-  text-align: center;
+.checkout-forms .checkout-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 0 10px 0;
 }
 
 .checkout-forms .btn {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.checkout-product label {
-  padding: 10px;
+.checkout-product {
+  color: #FDFEFF;
+}
+
+.checkout-product .checkout-tbl {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-product .checkout-price label {
+  padding: 15px;
+}
+
+@media (max-width: 480px) {
+  .checkout-parent {
+    padding-bottom: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .payment-container {
