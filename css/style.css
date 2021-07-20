@@ -1420,15 +1420,82 @@ h1 {
   flex-direction: column;
 }
 
+.checkout-product .checkout-price {
+  height: auto;
+}
+
 .checkout-product .checkout-price label {
   padding: 15px;
 }
 
+.checkout-tbl {
+  border-collapse: collapse;
+  height: auto;
+  max-width: 100%;
+}
+
+.prod-img, .prod-name, .prod-quantity {
+  border: none;
+  text-align: left;
+  padding: 12px;
+}
+
+.checkout-img, .checkout-name, .checkout-price {
+  height: 150px;
+}
+
+/*Media Queries*/
 @media (max-width: 480px) {
   .checkout-parent {
     padding-bottom: 20px;
     flex-direction: column;
     text-align: center;
+  }
+  .checkout-tbl .checkout {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .checkout-parent {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .checkout-parent .checkout-forms {
+    display: flex;
+    justify-content: center;
+  }
+  .checkout-tbl .checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    padding: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .checkout-parent {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .checkout-parent .checkout-forms {
+    display: flex;
+    justify-content: center;
+  }
+  .checkout-tbl .checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    padding: 12px;
   }
 }
 

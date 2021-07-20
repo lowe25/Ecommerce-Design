@@ -29,16 +29,81 @@
   }
   color: $txt-color;
   .checkout-price{
+    height: auto;
     label{
       padding: 15px;
     }
   }
 }
 
+//Table
+.checkout-tbl {
+  border-collapse: collapse;
+  height: auto;
+  max-width: 100%;
+}
+
+.prod-img,.prod-name,.prod-quantity {
+  border: none;
+  text-align: left;
+  padding: 12px;
+}
+.checkout-img,.checkout-name,.checkout-price{
+  height: 150px;
+}
+
+/*Media Queries*/
+//Mobile
 @include mobile-device(mobile-md){
   .checkout-parent{
     padding-bottom: 20px;
     flex-direction: column;
     text-align: center;
+  }
+  .checkout-tbl{
+    .checkout{
+      height: 220px;
+      display: flex;
+      flex-direction: column;
+      padding: 12px;
+    }
+  }
+}
+
+//Mobile LG
+@include mobile-device-lg(mobile-lg, tablet-sm){
+  .checkout-parent{
+ @include flex-center;
+    text-align: center;
+   .checkout-forms{
+     display: flex;
+     justify-content: center;
+   }
+  }
+  .checkout-tbl{
+    .checkout{
+      @include flex-format;
+      height: 220px;
+      padding: 12px;
+    }
+  }
+}
+
+//Tablet
+@include tablet-device(tablet-sm,tablet-md){
+  .checkout-parent{
+    @include flex-center;
+    text-align: center;
+   .checkout-forms{
+     display: flex;
+     justify-content: center;
+   }
+  }
+  .checkout-tbl{
+    .checkout{
+      @include flex-format;
+      height: 220px;
+      padding: 12px;
+    }
   }
 }

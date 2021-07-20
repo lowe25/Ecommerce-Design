@@ -52,7 +52,11 @@
   justify-content: center;
   align-items: center;
 }
-
+//Alignment
+@mixin flex-center{
+  justify-content: center;
+  flex-direction: column;
+}
 //Page
 @mixin container-height {
   height: 700px;
